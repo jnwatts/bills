@@ -1,0 +1,10 @@
+<?php
+
+$config["base"] = "/bills/";
+$config["host"] = "localhost";
+$config["user"] = "bills";
+$config["pass"] = "6FMXE4VjNU5RqtVL";
+$config["database"] = "bills";
+$config["table_prefix"] = "bills_";
+
+?>

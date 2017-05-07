@@ -1,0 +1,135 @@
+table#charts, table#charts th, table#charts td {
+  border: none;
+}
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  font-family: Arial;
+}
+
+table#items {
+    width: 100%;
+}
+
+tr.paid, tr.paid input {
+  /*opacity: 0.50;*/
+  background: #ccffcc;
+}
+tr.late, tr.late input {
+  background: #ffcccc;
+}
+tr.zero, tr.zero input {
+  opacity: 0.50;
+}
+tr.zero td.paid_date input {
+  display: none;
+}
+tr.automatic td.paid_date input {
+  display: none;
+}
+tr.unpaid td.paid_date input {
+  font-weight: bold;
+}
+#items tbody, #items tbody input {
+  font-size: 14pt;
+}
+#items tbody input[type="date"] {
+  font-size: 10pt;
+}
+#items tbody input {
+  padding: 0;
+}
+/*
+td.amount input {
+  width: 100px;
+}
+*/
+td.name, td.due_date, td.paid_date {
+    white-space: nowrap;
+}
+td.notes {
+    width: 100%;
+}
+td.notes div {
+    display: flex;
+}
+td.notes input {
+    flex: 1;
+}
+td.name select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    border: none;
+    /* needed for Firefox: */
+    /*overflow:hidden;
+    width: 120%;*/
+}
+td.amount, td.amount input, td.due_date, td.paid_date {
+  text-align: right;
+}
+td.auto, td.repeat, td.automatic {
+  text-align: center;
+}
+.placeholder {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+}
+.positive {
+  color: green
+}
+.negative {
+  color: red
+}
+.fuzzed {
+    text-shadow: 0 0 30px black;
+    color: transparent !important
+}
+tr.view {
+  /*white-space: nowrap;*/
+}
+input {
+  border: 0;
+}
+#items_busy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+
+  background-color: rgba(0,0,0,0);
+  border: 5px solid rgba(0,183,229,0.9);
+  opacity: .8;
+  border-top: 5px solid rgba(0,0,0,0);
+  border-left: 5px solid rgba(0,0,0,0);
+  border-radius: 50px;
+  box-shadow: 0 0 35px #2187e7, 0 0 35px #2187e7 inset;
+  width: 50px;
+  height: 50px;
+  /*margin: 0 auto;*/
+  -moz-animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    };
+}
