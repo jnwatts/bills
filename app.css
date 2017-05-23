@@ -12,6 +12,9 @@ table#items {
     width: 100%;
 }
 
+tr.unpaid, tr.unpaid input {
+  background: #ffffcc;
+}
 tr.paid, tr.paid input {
   /*opacity: 0.50;*/
   background: #ccffcc;
