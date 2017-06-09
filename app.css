@@ -12,7 +12,7 @@ table#items {
     width: 100%;
 }
 
-tr.unpaid, tr.unpaid input {
+tr.unpaid:not(.zero), tr.unpaid:not(.zero) input {
   background: #ffffcc;
 }
 tr.paid, tr.paid input {
