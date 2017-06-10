@@ -69,7 +69,7 @@ require("items-class.php");
         <!-- <input type="text" data-bind="value: type_id" list="types"></td> -->
         <select data-bind="options: $root.types, optionsValue: 'id', optionsText: 'name', value: type_id"></select>
         </td>
-        <td class="amount"><input type="text" class="currency" data-bind="css: {negative: amount() < 0, positive: amount() > 0}, value: amount"></td>
+        <td class="amount"><input type="text" class="currency" data-bind="css: {negative: amount() < 0, positive: amount() > 0, fuzzed: $root.fuzzMode()}, value: amount"></td>
         <td class="due_date"><input type="date" data-bind="datePicker: due_date"></td>
         <td class="repeat" data-bind="text: repeat_type().short_name()"></td>
         <td class="automatic"><input type="checkbox" data-bind="checked: automatic"></td>
