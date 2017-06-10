@@ -167,6 +167,9 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
     <script type="text/javascript" src="knockout-tristate.js"></script>
     <script type="text/javascript" src="chart.js"></script>
     <script type="text/javascript" src="pie.js"></script>
+    <script type="text/javascript" src="format.js"></script>
+    <script type="text/javascript" src="month-date-picker.js"></script>
+    <script type="text/javascript" src="item.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
 (function() {
@@ -174,7 +177,7 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
   
   app.repeat_types.reset(app.data.repeat_types);
   app.types.reset(app.data.types);
-  app.items.reset(app.data.items.map(app.Item.prototype.parse));
+  app.items.reset(app.data.items.map(Item.prototype.parse));
   app.viewmodel = {};
   app.viewmodel.repeat_types = kb.collectionObservable(app.repeat_types);
   app.viewmodel.types = kb.collectionObservable(app.types);
