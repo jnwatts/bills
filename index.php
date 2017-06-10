@@ -82,7 +82,7 @@ require("items-class.php");
       <button data-bind="click: updateChart">Chart</button>
       <button data-bind="click: updatePie">Pie</button>
       <button data-bind="click: addItem">Add</button>
-      <button data-bind="click: duplicateItems, enable: itemsSelected">Duplicate</button>
+      <button data-bind="click: duplicateItems, enable: itemsSelected" title="Duplicate selected items to next month">Duplicate</button>
       <button data-bind="click: deleteItems, enable: itemsSelected">Delete</button>
       <label>
         <input type="checkbox" data-bind="checked: editMode">
