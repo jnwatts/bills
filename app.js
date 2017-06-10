@@ -18,6 +18,11 @@ var app = window.app = window.app || {};
       self.types = app.viewmodel.types;
       self.repeat_types = app.viewmodel.repeat_types;
       self.items = kb.collectionObservable(app.items, {factories: {models: ItemViewModel}});
+      self.items.comparator(function(a, b) {
+        a = a.sortDate();
+        b = b.sortDate();
+        return ( ( a == b ) ? 0 : ( ( a > b ) ? 1 : -1 ) );
+      });
       self.months = kb.collectionObservable(app.months);
 
       self.date = ko.observable(moment({year: app.data.year, month: app.data.month - 1}).toDate());
