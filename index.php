@@ -39,10 +39,6 @@ require("items-class.php");
       <button data-bind="click: monthPrev">
         <img src="ic_navigate_before_black_24px.svg">
       </button>
-<!--
-      <select data-bind="options: months, optionsValue: 'id', optionsText: 'name', value: month"></select>
-      <input type="number" data-bind="value: year">
--->
       <!-- <span data-bind="datePicker: date"></span> -->
       <input type="month" data-bind="monthPicker: date">
       <button data-bind="click: monthNext">

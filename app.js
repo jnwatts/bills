@@ -10,37 +10,6 @@ var app = window.app = window.app || {};
 
   app.repeat_types = new Backbone.Collection();
 
-  app.months = new Backbone.Collection(
-    _.map([
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ], function(month, i) { return {id: i+1, name: month}; })
-  );
-
-  // window.ItemTypeViewModel = kb.ViewModel.extend({
-  //   constructor: function() {
-  //     var self = this;
-  //     kb.ViewModel.prototype.constructor.apply(this, arguments);
-
-  //     self.repeat = ko.computed(function() {
-  //       var id = self.repeat_type();
-  //       return ko.utils.arrayFirst(app.viewmodel.repeat_types(), function (repeat_type) {
-  //         return repeat_type.id() == id;
-  //       });
-  //     });
-  //   },
-  // });
-
   window.AppViewModel = kb.ViewModel.extend({
     constructor: function() {
       var self = this;
