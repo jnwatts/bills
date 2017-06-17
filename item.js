@@ -71,12 +71,12 @@
       self.paid = ko.computed(function() {
         var today = new Date();
 
-        if (self.due_date() <= today) {
+        if (self.paid_date() !== null && self.paid_date() <= today) {
+          return true;
+        } else if (self.due_date() <= today) {
           if (parseFloat(self.amount()) === 0.00)
             return true;
           else if (self.automatic())
-            return true;
-          else if (self.paid_date() !== null && self.paid_date() <= today)
             return true;
           else
             return false;
