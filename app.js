@@ -19,9 +19,15 @@ var app = window.app = window.app || {};
       self.repeat_types = app.viewmodel.repeat_types;
       self.items = kb.collectionObservable(app.items, {factories: {models: ItemViewModel}});
       self.items.comparator(function(a, b) {
-        a = a.sortDate();
-        b = b.sortDate();
-        return ( ( a == b ) ? 0 : ( ( a > b ) ? 1 : -1 ) );
+        var x = a.sortDate().getTime();
+        var y = b.sortDate().getTime();
+        if (x == y) {
+            x = a.name();
+            y = b.name();
+            return ( ( x == y ) ? 0 : ( ( x > y ) ? 1 : -1 ) );
+        } else {
+            return ( ( x > y ) ? 1 : -1 );
+        }
       });
       self.months = kb.collectionObservable(app.months);
 

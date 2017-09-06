@@ -121,7 +121,7 @@
       });
 
       self.sortDate = ko.computed(function() {
-        return self.paid_date() ? self.paid_date() : self.due_date();
+        return self.due_date();
       });
 
       self.destroy = function() {
