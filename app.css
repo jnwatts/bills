@@ -13,7 +13,7 @@ table#items {
 }
 
 tr.unpaid:not(.zero), tr.unpaid:not(.zero) input {
-  background: #ffffcc;
+  background: #ffee88;
 }
 tr.paid, tr.paid input {
   /*opacity: 0.50;*/
