@@ -4,9 +4,9 @@ var app = window.app = window.app || {};
 
   app.base = $('base')[0] && $('base')[0].href || '';
 
-  app.items = new ItemList();
+  app.types = new TypeList();
 
-  app.types = new Backbone.Collection();
+  app.items = new ItemList();
 
   app.repeat_types = new Backbone.Collection();
 
@@ -15,7 +15,7 @@ var app = window.app = window.app || {};
       var self = this;
       kb.ViewModel.prototype.constructor.apply(this, arguments);
 
-      self.types = app.viewmodel.types;
+      self.types = kb.collectionObservable(app.types, {factories: {models: TypeViewModel}});
       self.repeat_types = app.viewmodel.repeat_types;
       self.items = kb.collectionObservable(app.items, {factories: {models: ItemViewModel}});
       self.items.comparator(function(a, b) {
