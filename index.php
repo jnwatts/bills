@@ -1,7 +1,6 @@
 <!-- vim: set ts=2 sw=2 expandtab: -->
 <?php
 require("config.php");
-require("items-class.php");
 ?>
 <html lang="en" ng-app="StarterApp">
   <head>
@@ -113,11 +112,6 @@ require("items-class.php");
       </table>
     </div><!-- content -->
 
-<?php
-$items = new Items($config);
-
-?>
-
     <script type="text/javascript">
 (function() {
   'use strict';
@@ -135,7 +129,7 @@ $items = new Items($config);
       {id: 2, short_name: 'W', name: "Weekly"}
     ],
     types: [],
-    items: <?=json_encode($items->items($year, $month))?>,
+    items: [],
     year: navigationDate.getFullYear(),
     month: navigationDate.getMonth() + 1,
     defaultYear: defaultDate.getFullYear(),
@@ -164,7 +158,6 @@ $items = new Items($config);
   
   app.repeat_types.reset(app.data.repeat_types);
   app.types.fetch();
-  app.items.reset(app.data.items.map(Item.prototype.parse));
   app.viewmodel = {
     repeat_types: kb.collectionObservable(app.repeat_types),
     types: kb.collectionObservable(app.types),
