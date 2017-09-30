@@ -1,0 +1,4016 @@
+[
+{
+    "type": "header",
+    "version": "4.7.4",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+},
+{
+    "type": "database",
+    "name": "bills"
+},
+{
+    "type": "table",
+    "name": "bills_item_instances",
+    "database": "bills",
+    "data": 
+[
+{
+    "id": "74",
+    "due_date": "2016-09-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "76",
+    "due_date": "2016-09-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "77",
+    "due_date": "2016-09-06",
+    "type_id": "5",
+    "paid_date": "2016-09-08",
+    "automatic": "0",
+    "notes": "(Actually due 19th)",
+    "amount": "-596.00"
+},
+{
+    "id": "78",
+    "due_date": "2016-09-11",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$3000 limit 19% (Is this student card or normal card? Call to see about lowering rate or changing to different card?)",
+    "amount": "0.00"
+},
+{
+    "id": "79",
+    "due_date": "2016-09-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "80",
+    "due_date": "2016-09-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "81",
+    "due_date": "2016-09-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (~$1,250 left  9\/7)",
+    "amount": "-40.00"
+},
+{
+    "id": "82",
+    "due_date": "2016-09-15",
+    "type_id": "22",
+    "paid_date": "2016-09-17",
+    "automatic": "0",
+    "notes": "Number is in \u20ac",
+    "amount": "-12.00"
+},
+{
+    "id": "83",
+    "due_date": "2016-09-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card",
+    "amount": "-50.00"
+},
+{
+    "id": "84",
+    "due_date": "2016-09-19",
+    "type_id": "33",
+    "paid_date": "2016-09-17",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-210.99"
+},
+{
+    "id": "85",
+    "due_date": "2016-09-21",
+    "type_id": "32",
+    "paid_date": "2016-09-17",
+    "automatic": "0",
+    "notes": "PAY MORE OF THIS IF POSSIBLE AT END OF MONTH",
+    "amount": "-1000.00"
+},
+{
+    "id": "86",
+    "due_date": "2016-09-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "87",
+    "due_date": "2016-09-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-380.00"
+},
+{
+    "id": "88",
+    "due_date": "2016-09-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "89",
+    "due_date": "2016-09-26",
+    "type_id": "28",
+    "paid_date": "2016-09-26",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-57.57"
+},
+{
+    "id": "90",
+    "due_date": "2016-09-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-105.39"
+},
+{
+    "id": "91",
+    "due_date": "2016-09-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-261.00"
+},
+{
+    "id": "92",
+    "due_date": "2016-09-30",
+    "type_id": "3",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "93",
+    "due_date": "2016-09-02",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "758.20"
+},
+{
+    "id": "95",
+    "due_date": "2016-09-09",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "96",
+    "due_date": "2016-09-09",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "215.00"
+},
+{
+    "id": "97",
+    "due_date": "2016-09-16",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "99",
+    "due_date": "2016-09-23",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Must keep ~$256 minimum to make rent at end of month",
+    "amount": "712.54"
+},
+{
+    "id": "101",
+    "due_date": "2016-09-30",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "732.52"
+},
+{
+    "id": "107",
+    "due_date": "2016-09-05",
+    "type_id": "34",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-100.00"
+},
+{
+    "id": "208",
+    "due_date": "2016-09-09",
+    "type_id": "0",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Progressive mcy",
+    "amount": "-18.67"
+},
+{
+    "id": "210",
+    "due_date": "2016-09-23",
+    "type_id": "31",
+    "paid_date": "2016-09-23",
+    "automatic": "0",
+    "notes": "Rent cigs phone",
+    "amount": "260.00"
+},
+{
+    "id": "211",
+    "due_date": "2016-09-16",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "212",
+    "due_date": "2016-09-02",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "284",
+    "due_date": "2016-10-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "285",
+    "due_date": "2016-10-07",
+    "type_id": "2",
+    "paid_date": "2016-10-07",
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "286",
+    "due_date": "2016-10-14",
+    "type_id": "2",
+    "paid_date": "2016-10-14",
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "287",
+    "due_date": "2016-10-21",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "288",
+    "due_date": "2016-10-28",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "289",
+    "due_date": "2016-10-07",
+    "type_id": "31",
+    "paid_date": "2016-10-07",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "291",
+    "due_date": "2016-10-21",
+    "type_id": "31",
+    "paid_date": "2016-10-21",
+    "automatic": "0",
+    "notes": "For this and previous week",
+    "amount": "200.00"
+},
+{
+    "id": "292",
+    "due_date": "2016-10-28",
+    "type_id": "31",
+    "paid_date": "2016-10-28",
+    "automatic": "0",
+    "notes": "Includes VZW $40.00",
+    "amount": "140.00"
+},
+{
+    "id": "294",
+    "due_date": "2016-10-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "295",
+    "due_date": "2016-10-06",
+    "type_id": "5",
+    "paid_date": "2016-10-11",
+    "automatic": "0",
+    "notes": "(Actually due 19th)",
+    "amount": "-596.00"
+},
+{
+    "id": "296",
+    "due_date": "2016-10-11",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "297",
+    "due_date": "2016-10-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "298",
+    "due_date": "2016-10-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "299",
+    "due_date": "2016-10-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (~$1,250 left  9\/7)",
+    "amount": "-40.00"
+},
+{
+    "id": "300",
+    "due_date": "2016-10-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Next month will be $60 to include $10\/mth IP",
+    "amount": "-50.00"
+},
+{
+    "id": "301",
+    "due_date": "2016-10-15",
+    "type_id": "22",
+    "paid_date": "2016-10-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac",
+    "amount": "-12.00"
+},
+{
+    "id": "302",
+    "due_date": "2016-10-19",
+    "type_id": "33",
+    "paid_date": "2016-10-19",
+    "automatic": "0",
+    "notes": "11\/19\/2016 will be $74.82",
+    "amount": "-210.99"
+},
+{
+    "id": "303",
+    "due_date": "2016-10-21",
+    "type_id": "32",
+    "paid_date": "2016-10-21",
+    "automatic": "0",
+    "notes": "PAY MORE OF THIS IF POSSIBLE AT END OF MONTH",
+    "amount": "-1000.00"
+},
+{
+    "id": "304",
+    "due_date": "2016-10-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "305",
+    "due_date": "2016-10-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-380.00"
+},
+{
+    "id": "306",
+    "due_date": "2016-10-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "307",
+    "due_date": "2016-10-26",
+    "type_id": "28",
+    "paid_date": "2016-10-24",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-66.52"
+},
+{
+    "id": "308",
+    "due_date": "2016-10-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-261.00"
+},
+{
+    "id": "309",
+    "due_date": "2016-10-27",
+    "type_id": "29",
+    "paid_date": "2016-10-31",
+    "automatic": "1",
+    "notes": null,
+    "amount": "-105.34"
+},
+{
+    "id": "310",
+    "due_date": "2016-10-30",
+    "type_id": "3",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "311",
+    "due_date": "2016-09-30",
+    "type_id": "31",
+    "paid_date": "2016-09-30",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "314",
+    "due_date": "2016-09-30",
+    "type_id": "0",
+    "paid_date": "2016-09-30",
+    "automatic": "0",
+    "notes": "Fastrac",
+    "amount": "-31.84"
+},
+{
+    "id": "315",
+    "due_date": "2016-09-13",
+    "type_id": "0",
+    "paid_date": "2016-09-13",
+    "automatic": "0",
+    "notes": "Fastrac",
+    "amount": "-24.57"
+},
+{
+    "id": "316",
+    "due_date": "2016-09-06",
+    "type_id": "0",
+    "paid_date": "2016-09-06",
+    "automatic": "0",
+    "notes": "Fastrac",
+    "amount": "-27.08"
+},
+{
+    "id": "317",
+    "due_date": "2016-10-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "320",
+    "due_date": "2016-10-19",
+    "type_id": "0",
+    "paid_date": "2016-10-20",
+    "automatic": "0",
+    "notes": "Oct pro-rate and nov static IP address w\/ Greenlight",
+    "amount": "-13.63"
+},
+{
+    "id": "1258",
+    "due_date": "2016-11-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1259",
+    "due_date": "2016-11-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1260",
+    "due_date": "2016-11-06",
+    "type_id": "5",
+    "paid_date": "2016-11-04",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.00"
+},
+{
+    "id": "1261",
+    "due_date": "2016-11-04",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.52"
+},
+{
+    "id": "1262",
+    "due_date": "2016-11-11",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.52"
+},
+{
+    "id": "1263",
+    "due_date": "2016-11-18",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "895.24"
+},
+{
+    "id": "1264",
+    "due_date": "2016-11-25",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "803.88"
+},
+{
+    "id": "1265",
+    "due_date": "2016-11-04",
+    "type_id": "31",
+    "paid_date": "2016-11-09",
+    "automatic": "0",
+    "notes": "Plus phone",
+    "amount": "140.00"
+},
+{
+    "id": "1266",
+    "due_date": "2016-11-11",
+    "type_id": "31",
+    "paid_date": "2016-11-12",
+    "automatic": "0",
+    "notes": "Traded $100 for jersey",
+    "amount": "100.00"
+},
+{
+    "id": "1267",
+    "due_date": "2016-11-18",
+    "type_id": "31",
+    "paid_date": "2016-11-21",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1269",
+    "due_date": "2016-11-11",
+    "type_id": "6",
+    "paid_date": "2016-11-11",
+    "automatic": "0",
+    "notes": "$3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "-200.00"
+},
+{
+    "id": "1270",
+    "due_date": "2016-11-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1271",
+    "due_date": "2016-11-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1272",
+    "due_date": "2016-11-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1273",
+    "due_date": "2016-11-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1274",
+    "due_date": "2016-11-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1275",
+    "due_date": "2016-11-15",
+    "type_id": "22",
+    "paid_date": "2016-11-14",
+    "automatic": "0",
+    "notes": "Number is in \u20ac",
+    "amount": "-12.00"
+},
+{
+    "id": "1276",
+    "due_date": "2016-11-19",
+    "type_id": "33",
+    "paid_date": "2016-11-18",
+    "automatic": "0",
+    "notes": "Next renewal period should significantly lower rates (no more accidents): Return coverage to 300k\/100k and decent deductables",
+    "amount": "-69.82"
+},
+{
+    "id": "1277",
+    "due_date": "2016-11-21",
+    "type_id": "32",
+    "paid_date": "2016-11-18",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-456.61"
+},
+{
+    "id": "1278",
+    "due_date": "2016-11-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1279",
+    "due_date": "2016-11-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1280",
+    "due_date": "2016-11-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1281",
+    "due_date": "2016-11-26",
+    "type_id": "28",
+    "paid_date": "2016-11-25",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-55.82"
+},
+{
+    "id": "1282",
+    "due_date": "2016-11-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-261.00"
+},
+{
+    "id": "1283",
+    "due_date": "2016-11-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-105.34"
+},
+{
+    "id": "1284",
+    "due_date": "2016-11-30",
+    "type_id": "3",
+    "paid_date": "2016-12-01",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1286",
+    "due_date": "2016-11-15",
+    "type_id": "36",
+    "paid_date": "2016-11-17",
+    "automatic": "0",
+    "notes": "Next will be $48.15 on 2017-01-15",
+    "amount": "-57.15"
+},
+{
+    "id": "1287",
+    "due_date": "2016-12-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1288",
+    "due_date": "2016-12-02",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "803.89"
+},
+{
+    "id": "1289",
+    "due_date": "2016-12-09",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.52"
+},
+{
+    "id": "1290",
+    "due_date": "2016-12-16",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "1291",
+    "due_date": "2016-12-23",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "712.53"
+},
+{
+    "id": "1292",
+    "due_date": "2016-12-30",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "700.00"
+},
+{
+    "id": "1293",
+    "due_date": "2016-12-02",
+    "type_id": "31",
+    "paid_date": "2016-12-02",
+    "automatic": "0",
+    "notes": "Including last week",
+    "amount": "200.00"
+},
+{
+    "id": "1294",
+    "due_date": "2016-12-09",
+    "type_id": "31",
+    "paid_date": "2016-12-09",
+    "automatic": "0",
+    "notes": "(Including phone)",
+    "amount": "140.00"
+},
+{
+    "id": "1295",
+    "due_date": "2016-12-16",
+    "type_id": "31",
+    "paid_date": "2016-12-16",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1296",
+    "due_date": "2016-12-23",
+    "type_id": "31",
+    "paid_date": "2016-12-30",
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1297",
+    "due_date": "2016-12-30",
+    "type_id": "31",
+    "paid_date": "2016-12-30",
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1298",
+    "due_date": "2016-12-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1299",
+    "due_date": "2016-12-06",
+    "type_id": "5",
+    "paid_date": "2016-12-09",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.00"
+},
+{
+    "id": "1300",
+    "due_date": "2016-12-11",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto 12\/9 starting 12\/11. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "-200.00"
+},
+{
+    "id": "1301",
+    "due_date": "2016-12-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1302",
+    "due_date": "2016-12-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1303",
+    "due_date": "2016-12-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1304",
+    "due_date": "2016-12-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1305",
+    "due_date": "2016-12-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "Next will be $48.15 on 2017-01-15",
+    "amount": "0.00"
+},
+{
+    "id": "1306",
+    "due_date": "2016-12-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1307",
+    "due_date": "2016-12-15",
+    "type_id": "22",
+    "paid_date": "2016-12-09",
+    "automatic": "0",
+    "notes": "Number is in \u20ac",
+    "amount": "-12.00"
+},
+{
+    "id": "1308",
+    "due_date": "2016-12-19",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "Switched to geico, need to officially cancel this prior to 19th",
+    "amount": "0.00"
+},
+{
+    "id": "1309",
+    "due_date": "2016-12-21",
+    "type_id": "32",
+    "paid_date": "2016-12-21",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-849.10"
+},
+{
+    "id": "1310",
+    "due_date": "2016-12-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1311",
+    "due_date": "2016-12-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1312",
+    "due_date": "2016-12-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1313",
+    "due_date": "2016-12-26",
+    "type_id": "28",
+    "paid_date": "2016-12-26",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-49.08"
+},
+{
+    "id": "1314",
+    "due_date": "2016-12-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1315",
+    "due_date": "2016-12-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-105.34"
+},
+{
+    "id": "1316",
+    "due_date": "2016-12-30",
+    "type_id": "3",
+    "paid_date": "2016-12-30",
+    "automatic": "0",
+    "notes": "Paid 2017-1-4",
+    "amount": "-830.00"
+},
+{
+    "id": "1317",
+    "due_date": "2016-12-02",
+    "type_id": "0",
+    "paid_date": "2016-12-02",
+    "automatic": "0",
+    "notes": "Osiris road plate",
+    "amount": "-265.00"
+},
+{
+    "id": "1497",
+    "due_date": "2017-01-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1498",
+    "due_date": "2017-01-06",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "947.66"
+},
+{
+    "id": "1499",
+    "due_date": "2017-01-13",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "947.51"
+},
+{
+    "id": "1500",
+    "due_date": "2017-01-20",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "947.52"
+},
+{
+    "id": "1501",
+    "due_date": "2017-01-27",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1502",
+    "due_date": "2017-01-06",
+    "type_id": "31",
+    "paid_date": "2017-01-03",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1503",
+    "due_date": "2017-01-13",
+    "type_id": "31",
+    "paid_date": "2017-01-13",
+    "automatic": "0",
+    "notes": null,
+    "amount": "140.00"
+},
+{
+    "id": "1504",
+    "due_date": "2017-01-20",
+    "type_id": "31",
+    "paid_date": "2017-01-20",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1505",
+    "due_date": "2017-01-27",
+    "type_id": "31",
+    "paid_date": "2017-01-27",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1506",
+    "due_date": "2017-01-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1507",
+    "due_date": "2017-01-06",
+    "type_id": "5",
+    "paid_date": "2017-01-09",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.89"
+},
+{
+    "id": "1508",
+    "due_date": "2017-01-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto 12\/9 starting 12\/11. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "-200.00"
+},
+{
+    "id": "1509",
+    "due_date": "2017-01-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1510",
+    "due_date": "2017-01-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1511",
+    "due_date": "2017-01-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1512",
+    "due_date": "2017-01-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1513",
+    "due_date": "2017-01-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-48.15"
+},
+{
+    "id": "1514",
+    "due_date": "2017-01-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1515",
+    "due_date": "2017-01-15",
+    "type_id": "22",
+    "paid_date": "2017-01-08",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1517",
+    "due_date": "2017-01-21",
+    "type_id": "32",
+    "paid_date": "2017-01-20",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-876.70"
+},
+{
+    "id": "1518",
+    "due_date": "2017-01-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1519",
+    "due_date": "2017-01-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1520",
+    "due_date": "2017-01-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1521",
+    "due_date": "2017-01-26",
+    "type_id": "28",
+    "paid_date": "2017-01-22",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-49.08"
+},
+{
+    "id": "1522",
+    "due_date": "2017-01-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1523",
+    "due_date": "2017-01-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-123.81"
+},
+{
+    "id": "1524",
+    "due_date": "2017-01-30",
+    "type_id": "3",
+    "paid_date": "2017-02-02",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1525",
+    "due_date": "2017-01-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1526",
+    "due_date": "2017-01-17",
+    "type_id": "0",
+    "paid_date": "2017-01-17",
+    "automatic": "0",
+    "notes": "Mick glasses (from 2016-1-7)",
+    "amount": "-251.40"
+},
+{
+    "id": "1527",
+    "due_date": "2017-01-18",
+    "type_id": "0",
+    "paid_date": "2017-01-18",
+    "automatic": "0",
+    "notes": "Howard Johnson (2016-12-29)",
+    "amount": "-211.42"
+},
+{
+    "id": "1528",
+    "due_date": "2017-01-10",
+    "type_id": "0",
+    "paid_date": "2017-01-10",
+    "automatic": "0",
+    "notes": "D3 bonus",
+    "amount": "1483.41"
+},
+{
+    "id": "1529",
+    "due_date": "2017-01-17",
+    "type_id": "6",
+    "paid_date": "2017-01-17",
+    "automatic": "0",
+    "notes": "Discover additional from bonus",
+    "amount": "-1400.00"
+},
+{
+    "id": "1531",
+    "due_date": "2017-01-22",
+    "type_id": "0",
+    "paid_date": "2017-01-22",
+    "automatic": "0",
+    "notes": "Mick: Groceries",
+    "amount": "40.00"
+},
+{
+    "id": "1621",
+    "due_date": "2017-02-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1622",
+    "due_date": "2017-02-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1623",
+    "due_date": "2017-02-06",
+    "type_id": "5",
+    "paid_date": "2017-02-07",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.89"
+},
+{
+    "id": "1624",
+    "due_date": "2017-02-03",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1625",
+    "due_date": "2017-02-10",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1626",
+    "due_date": "2017-02-17",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1627",
+    "due_date": "2017-02-24",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1628",
+    "due_date": "2017-02-03",
+    "type_id": "31",
+    "paid_date": "2017-02-03",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1629",
+    "due_date": "2017-02-10",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1630",
+    "due_date": "2017-02-17",
+    "type_id": "31",
+    "paid_date": "2017-02-17",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1631",
+    "due_date": "2017-02-24",
+    "type_id": "31",
+    "paid_date": "2017-02-24",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1632",
+    "due_date": "2017-02-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1633",
+    "due_date": "2017-02-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1634",
+    "due_date": "2017-02-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1635",
+    "due_date": "2017-02-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Paid down $1400 chunk with bonus in Jan, additional 250 in Feb. Switched to auto 12\/9 starting 12\/11. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "-200.00"
+},
+{
+    "id": "1636",
+    "due_date": "2017-02-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1637",
+    "due_date": "2017-02-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-48.15"
+},
+{
+    "id": "1638",
+    "due_date": "2017-02-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1639",
+    "due_date": "2017-02-15",
+    "type_id": "22",
+    "paid_date": "2017-02-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1641",
+    "due_date": "2017-02-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1642",
+    "due_date": "2017-02-21",
+    "type_id": "32",
+    "paid_date": "2017-02-20",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-1163.74"
+},
+{
+    "id": "1643",
+    "due_date": "2017-02-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1644",
+    "due_date": "2017-02-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1645",
+    "due_date": "2017-02-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1646",
+    "due_date": "2017-02-26",
+    "type_id": "28",
+    "paid_date": "2017-02-27",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-48.60"
+},
+{
+    "id": "1647",
+    "due_date": "2017-02-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1648",
+    "due_date": "2017-02-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-106.94"
+},
+{
+    "id": "1649",
+    "due_date": "2017-02-28",
+    "type_id": "3",
+    "paid_date": "2017-03-03",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1650",
+    "due_date": "2017-02-03",
+    "type_id": "0",
+    "paid_date": "2017-02-03",
+    "automatic": "0",
+    "notes": "Additional to for discover",
+    "amount": "-250.00"
+},
+{
+    "id": "1651",
+    "due_date": "2017-03-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1652",
+    "due_date": "2017-03-03",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1653",
+    "due_date": "2017-03-10",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "900.00"
+},
+{
+    "id": "1654",
+    "due_date": "2017-03-17",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "900.00"
+},
+{
+    "id": "1655",
+    "due_date": "2017-03-24",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.05"
+},
+{
+    "id": "1656",
+    "due_date": "2017-03-31",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "900.00"
+},
+{
+    "id": "1657",
+    "due_date": "2017-03-03",
+    "type_id": "31",
+    "paid_date": "2017-03-03",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1658",
+    "due_date": "2017-03-10",
+    "type_id": "31",
+    "paid_date": "2017-03-10",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1659",
+    "due_date": "2017-03-17",
+    "type_id": "31",
+    "paid_date": "2017-03-21",
+    "automatic": "0",
+    "notes": "120 next friday",
+    "amount": "140.00"
+},
+{
+    "id": "1660",
+    "due_date": "2017-03-24",
+    "type_id": "31",
+    "paid_date": "2017-03-24",
+    "automatic": "0",
+    "notes": null,
+    "amount": "120.00"
+},
+{
+    "id": "1661",
+    "due_date": "2017-03-31",
+    "type_id": "31",
+    "paid_date": "2017-04-02",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1662",
+    "due_date": "2017-03-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1663",
+    "due_date": "2017-03-06",
+    "type_id": "5",
+    "paid_date": "2017-03-07",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.89"
+},
+{
+    "id": "1664",
+    "due_date": "2017-03-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1665",
+    "due_date": "2017-03-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1666",
+    "due_date": "2017-03-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1667",
+    "due_date": "2017-03-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1668",
+    "due_date": "2017-03-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1669",
+    "due_date": "2017-03-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-48.15"
+},
+{
+    "id": "1670",
+    "due_date": "2017-03-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1671",
+    "due_date": "2017-03-15",
+    "type_id": "22",
+    "paid_date": "2017-03-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1672",
+    "due_date": "2017-03-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1673",
+    "due_date": "2017-03-21",
+    "type_id": "32",
+    "paid_date": "2017-03-21",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-866.56"
+},
+{
+    "id": "1674",
+    "due_date": "2017-03-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1675",
+    "due_date": "2017-03-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1676",
+    "due_date": "2017-03-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1677",
+    "due_date": "2017-03-26",
+    "type_id": "28",
+    "paid_date": "2017-03-27",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-61.16"
+},
+{
+    "id": "1678",
+    "due_date": "2017-03-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1679",
+    "due_date": "2017-03-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-106.94"
+},
+{
+    "id": "1680",
+    "due_date": "2017-03-28",
+    "type_id": "3",
+    "paid_date": "2017-04-04",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1681",
+    "due_date": "2017-03-10",
+    "type_id": "6",
+    "paid_date": "2017-03-10",
+    "automatic": "0",
+    "notes": "Paying off last of discover overflow",
+    "amount": "-378.80"
+},
+{
+    "id": "1682",
+    "due_date": "2017-03-08",
+    "type_id": "32",
+    "paid_date": "2017-03-08",
+    "automatic": "0",
+    "notes": "Jesse day: 23.26+41.69+8.52+7.17+13.35+1.99+10.00+14.12+9.75+32.34+4.78",
+    "amount": "-166.97"
+},
+{
+    "id": "1683",
+    "due_date": "2017-03-09",
+    "type_id": "32",
+    "paid_date": "2017-03-09",
+    "automatic": "0",
+    "notes": "Arette auto salon",
+    "amount": "-351.00"
+},
+{
+    "id": "1684",
+    "due_date": "2017-04-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1685",
+    "due_date": "2017-04-07",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1686",
+    "due_date": "2017-04-14",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1687",
+    "due_date": "2017-04-21",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1688",
+    "due_date": "2017-04-28",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1689",
+    "due_date": "2017-04-07",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1690",
+    "due_date": "2017-04-14",
+    "type_id": "31",
+    "paid_date": "2017-04-14",
+    "automatic": "0",
+    "notes": "Rent plus jersey",
+    "amount": "150.00"
+},
+{
+    "id": "1691",
+    "due_date": "2017-04-21",
+    "type_id": "31",
+    "paid_date": "2017-04-21",
+    "automatic": "0",
+    "notes": "Rent plus phone",
+    "amount": "150.00"
+},
+{
+    "id": "1692",
+    "due_date": "2017-04-28",
+    "type_id": "31",
+    "paid_date": "2017-05-01",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1693",
+    "due_date": "2017-04-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1694",
+    "due_date": "2017-04-07",
+    "type_id": "5",
+    "paid_date": "2017-04-07",
+    "automatic": "0",
+    "notes": "(Actually due 19th) ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-586.95"
+},
+{
+    "id": "1698",
+    "due_date": "2017-04-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1699",
+    "due_date": "2017-04-12",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1700",
+    "due_date": "2017-04-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1701",
+    "due_date": "2017-04-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1702",
+    "due_date": "2017-04-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1703",
+    "due_date": "2017-04-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-48.15"
+},
+{
+    "id": "1704",
+    "due_date": "2017-04-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1705",
+    "due_date": "2017-04-15",
+    "type_id": "22",
+    "paid_date": "2017-04-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1706",
+    "due_date": "2017-04-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1707",
+    "due_date": "2017-04-21",
+    "type_id": "32",
+    "paid_date": "2017-04-21",
+    "automatic": "0",
+    "notes": "$3k xfer'd to disco w\/ 3ish% rate",
+    "amount": "-1294.34"
+},
+{
+    "id": "1708",
+    "due_date": "2017-04-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1709",
+    "due_date": "2017-04-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1710",
+    "due_date": "2017-04-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1711",
+    "due_date": "2017-04-26",
+    "type_id": "28",
+    "paid_date": "2017-04-26",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-64.85"
+},
+{
+    "id": "1712",
+    "due_date": "2017-04-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1713",
+    "due_date": "2017-04-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1714",
+    "due_date": "2017-04-28",
+    "type_id": "3",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1715",
+    "due_date": "2017-04-04",
+    "type_id": "0",
+    "paid_date": "2017-04-04",
+    "automatic": "0",
+    "notes": "FedLoan: Paying off one of the 6%+",
+    "amount": "-661.16"
+},
+{
+    "id": "1716",
+    "due_date": "2017-04-04",
+    "type_id": "0",
+    "paid_date": "2017-04-04",
+    "automatic": "0",
+    "notes": "Tax refund",
+    "amount": "1757.00"
+},
+{
+    "id": "1717",
+    "due_date": "2017-04-05",
+    "type_id": "0",
+    "paid_date": "2017-04-05",
+    "automatic": "0",
+    "notes": "FedLoan: Paying off one of the 6%+",
+    "amount": "-1000.00"
+},
+{
+    "id": "1718",
+    "due_date": "2017-04-10",
+    "type_id": "0",
+    "paid_date": "2017-04-10",
+    "automatic": "0",
+    "notes": "Jersey",
+    "amount": "-450.00"
+},
+{
+    "id": "1719",
+    "due_date": "2017-04-09",
+    "type_id": "0",
+    "paid_date": "2017-04-09",
+    "automatic": "0",
+    "notes": "Jersey from Mick",
+    "amount": "300.00"
+},
+{
+    "id": "1720",
+    "due_date": "2017-05-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1721",
+    "due_date": "2017-05-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1722",
+    "due_date": "2017-05-19",
+    "type_id": "5",
+    "paid_date": "2017-05-05",
+    "automatic": "0",
+    "notes": "Switched to direct debit 2017-05-24 @ $596.89 + $3.11. ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-596.89"
+},
+{
+    "id": "1723",
+    "due_date": "2017-05-05",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1724",
+    "due_date": "2017-05-12",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1725",
+    "due_date": "2017-05-19",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1726",
+    "due_date": "2017-05-26",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1727",
+    "due_date": "2017-05-05",
+    "type_id": "31",
+    "paid_date": "2017-05-07",
+    "automatic": "0",
+    "notes": null,
+    "amount": "140.00"
+},
+{
+    "id": "1728",
+    "due_date": "2017-05-12",
+    "type_id": "31",
+    "paid_date": "2017-05-12",
+    "automatic": "0",
+    "notes": null,
+    "amount": "140.00"
+},
+{
+    "id": "1729",
+    "due_date": "2017-05-19",
+    "type_id": "31",
+    "paid_date": "2017-05-21",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1730",
+    "due_date": "2017-05-26",
+    "type_id": "31",
+    "paid_date": "2017-05-27",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1731",
+    "due_date": "2017-05-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1732",
+    "due_date": "2017-05-09",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1733",
+    "due_date": "2017-05-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1734",
+    "due_date": "2017-05-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1735",
+    "due_date": "2017-05-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1736",
+    "due_date": "2017-05-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-48.15"
+},
+{
+    "id": "1737",
+    "due_date": "2017-05-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1738",
+    "due_date": "2017-05-15",
+    "type_id": "22",
+    "paid_date": "2017-05-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1739",
+    "due_date": "2017-05-18",
+    "type_id": "37",
+    "paid_date": "2017-05-11",
+    "automatic": "0",
+    "notes": "(186.25 from period while Chase Amazon was being replaced)",
+    "amount": "-186.25"
+},
+{
+    "id": "1740",
+    "due_date": "2017-05-21",
+    "type_id": "32",
+    "paid_date": "2017-05-16",
+    "automatic": "0",
+    "notes": "$450 is Jersey",
+    "amount": "-1708.25"
+},
+{
+    "id": "1741",
+    "due_date": "2017-05-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1742",
+    "due_date": "2017-05-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1743",
+    "due_date": "2017-05-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1744",
+    "due_date": "2017-05-26",
+    "type_id": "28",
+    "paid_date": "2017-05-25",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-9.11"
+},
+{
+    "id": "1745",
+    "due_date": "2017-05-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1746",
+    "due_date": "2017-05-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1747",
+    "due_date": "2017-05-28",
+    "type_id": "3",
+    "paid_date": "2017-06-02",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1748",
+    "due_date": "2017-05-02",
+    "type_id": "0",
+    "paid_date": "2017-05-02",
+    "automatic": "0",
+    "notes": "For Jersey: 150 from savings, other 300 was already from Mick last month",
+    "amount": "150.00"
+},
+{
+    "id": "1749",
+    "due_date": "2017-06-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1750",
+    "due_date": "2017-06-02",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1751",
+    "due_date": "2017-06-09",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1752",
+    "due_date": "2017-06-16",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.04"
+},
+{
+    "id": "1753",
+    "due_date": "2017-06-23",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "919.03"
+},
+{
+    "id": "1754",
+    "due_date": "2017-06-30",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "900.00"
+},
+{
+    "id": "1755",
+    "due_date": "2017-06-02",
+    "type_id": "31",
+    "paid_date": "2017-06-03",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1756",
+    "due_date": "2017-06-09",
+    "type_id": "31",
+    "paid_date": "2017-06-11",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1757",
+    "due_date": "2017-06-16",
+    "type_id": "31",
+    "paid_date": "2017-06-17",
+    "automatic": "0",
+    "notes": null,
+    "amount": "140.00"
+},
+{
+    "id": "1758",
+    "due_date": "2017-06-23",
+    "type_id": "31",
+    "paid_date": "2017-06-26",
+    "automatic": "0",
+    "notes": null,
+    "amount": "120.00"
+},
+{
+    "id": "1759",
+    "due_date": "2017-06-30",
+    "type_id": "31",
+    "paid_date": "2017-07-02",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1760",
+    "due_date": "2017-06-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1761",
+    "due_date": "2017-06-09",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-19.66"
+},
+{
+    "id": "1762",
+    "due_date": "2017-06-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1763",
+    "due_date": "2017-06-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1764",
+    "due_date": "2017-06-15",
+    "type_id": "6",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1765",
+    "due_date": "2017-06-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1766",
+    "due_date": "2017-06-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Cycle renewed: First payment is 53.35 for 2017-06. Rest are 48.35 thru 2017-11.",
+    "amount": "-53.35"
+},
+{
+    "id": "1767",
+    "due_date": "2017-06-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1768",
+    "due_date": "2017-06-15",
+    "type_id": "22",
+    "paid_date": "2017-06-15",
+    "automatic": "0",
+    "notes": "Number is in \u20ac (paid \u20ac72 in Jan for Jan - Jun, next payment Jul - Dec)",
+    "amount": "-12.00"
+},
+{
+    "id": "1769",
+    "due_date": "2017-06-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1770",
+    "due_date": "2017-06-19",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to direct debit 2017-05-24 @ $596.89 + $3.11 (Email confirmation says $590.06???). ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-590.06"
+},
+{
+    "id": "1771",
+    "due_date": "2017-06-21",
+    "type_id": "32",
+    "paid_date": "2017-06-16",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-670.73"
+},
+{
+    "id": "1772",
+    "due_date": "2017-06-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1773",
+    "due_date": "2017-06-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1774",
+    "due_date": "2017-06-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1775",
+    "due_date": "2017-06-26",
+    "type_id": "28",
+    "paid_date": "2017-06-23",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-50.62"
+},
+{
+    "id": "1776",
+    "due_date": "2017-06-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1777",
+    "due_date": "2017-06-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1778",
+    "due_date": "2017-06-28",
+    "type_id": "3",
+    "paid_date": "2017-07-01",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1779",
+    "due_date": "2017-06-01",
+    "type_id": "38",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-3.00"
+},
+{
+    "id": "1780",
+    "due_date": "2017-06-25",
+    "type_id": "27",
+    "paid_date": "2017-06-18",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-4.00"
+},
+{
+    "id": "1781",
+    "due_date": "2017-06-05",
+    "type_id": "0",
+    "paid_date": "2017-06-05",
+    "automatic": "0",
+    "notes": "AAA renewal (Premiere + lapse fee - $5 auto-renewal discount), (Amazon card)",
+    "amount": "-155.00"
+},
+{
+    "id": "1782",
+    "due_date": "2017-06-06",
+    "type_id": "0",
+    "paid_date": "2017-06-06",
+    "automatic": "0",
+    "notes": "Car repair $825.40 (Amazon card)",
+    "amount": "-825.40"
+},
+{
+    "id": "1783",
+    "due_date": "2017-06-06",
+    "type_id": "0",
+    "paid_date": "2017-06-06",
+    "automatic": "0",
+    "notes": "From savings for car repair",
+    "amount": "825.40"
+},
+{
+    "id": "1784",
+    "due_date": "2017-07-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1785",
+    "due_date": "2017-07-01",
+    "type_id": "38",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-3.00"
+},
+{
+    "id": "1786",
+    "due_date": "2017-07-07",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.39"
+},
+{
+    "id": "1787",
+    "due_date": "2017-07-14",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.38"
+},
+{
+    "id": "1788",
+    "due_date": "2017-07-21",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.39"
+},
+{
+    "id": "1789",
+    "due_date": "2017-07-28",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.38"
+},
+{
+    "id": "1790",
+    "due_date": "2017-07-07",
+    "type_id": "31",
+    "paid_date": "2017-07-08",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1791",
+    "due_date": "2017-07-14",
+    "type_id": "31",
+    "paid_date": "2017-07-16",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1792",
+    "due_date": "2017-07-21",
+    "type_id": "31",
+    "paid_date": "2017-07-21",
+    "automatic": "0",
+    "notes": "And phone",
+    "amount": "140.00"
+},
+{
+    "id": "1793",
+    "due_date": "2017-07-28",
+    "type_id": "31",
+    "paid_date": "2017-07-28",
+    "automatic": "0",
+    "notes": null,
+    "amount": "100.00"
+},
+{
+    "id": "1794",
+    "due_date": "2017-07-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1795",
+    "due_date": "2017-07-09",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1796",
+    "due_date": "2017-07-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1797",
+    "due_date": "2017-07-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1798",
+    "due_date": "2017-07-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1799",
+    "due_date": "2017-07-15",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1800",
+    "due_date": "2017-07-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Cycle renewed: First payment is 53.35 for 2017-06. Rest are 48.35 thru 2017-11.",
+    "amount": "-48.35"
+},
+{
+    "id": "1801",
+    "due_date": "2017-07-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1802",
+    "due_date": "2017-07-15",
+    "type_id": "22",
+    "paid_date": "2017-07-17",
+    "automatic": "0",
+    "notes": "Actually \u20ac72. Paid Jul - Dec, next payment Jan - Jun.",
+    "amount": "-82.64"
+},
+{
+    "id": "1803",
+    "due_date": "2017-07-21",
+    "type_id": "32",
+    "paid_date": "2017-07-19",
+    "automatic": "0",
+    "notes": "(Bill is $1461.96: Already paid $218.99 on 7\/1 7\/2 & 7\/3 for motorcycle bits)",
+    "amount": "-1242.97"
+},
+{
+    "id": "1804",
+    "due_date": "2017-07-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "(186.25 from period while Chase Amazon was being replaced)",
+    "amount": "0.00"
+},
+{
+    "id": "1805",
+    "due_date": "2017-07-19",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to direct debit 2017-05-24 @ $596.89 + $3.11 (Email confirmation says $590.06???). ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-590.06"
+},
+{
+    "id": "1806",
+    "due_date": "2017-07-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1807",
+    "due_date": "2017-07-26",
+    "type_id": "28",
+    "paid_date": "2017-07-25",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-62.43"
+},
+{
+    "id": "1808",
+    "due_date": "2017-07-25",
+    "type_id": "27",
+    "paid_date": "2017-07-24",
+    "automatic": "0",
+    "notes": "Additional disk space (BC wallet)",
+    "amount": "-4.00"
+},
+{
+    "id": "1809",
+    "due_date": "2017-07-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1810",
+    "due_date": "2017-07-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1811",
+    "due_date": "2017-07-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1812",
+    "due_date": "2017-07-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1813",
+    "due_date": "2017-07-28",
+    "type_id": "3",
+    "paid_date": "2017-08-05",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1814",
+    "due_date": "2017-06-23",
+    "type_id": "34",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1815",
+    "due_date": "2017-06-30",
+    "type_id": "34",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1816",
+    "due_date": "2017-06-26",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-15.84"
+},
+{
+    "id": "1817",
+    "due_date": "2017-06-21",
+    "type_id": "0",
+    "paid_date": "2017-06-21",
+    "automatic": "0",
+    "notes": "Lantern from Tofty (\"Shapeways\" on Paypal)",
+    "amount": "-62.63"
+},
+{
+    "id": "1818",
+    "due_date": "2017-06-25",
+    "type_id": "0",
+    "paid_date": "2017-06-30",
+    "automatic": "0",
+    "notes": "Suzuki GS750E (waiting for check to clear)",
+    "amount": "-600.00"
+},
+{
+    "id": "1819",
+    "due_date": "2017-06-20",
+    "type_id": "0",
+    "paid_date": "2017-06-20",
+    "automatic": "0",
+    "notes": "Tritium vials from mixglo.com (\"Desther Enterprise Co., Ltd.\" on Paypal)",
+    "amount": "-77.50"
+},
+{
+    "id": "1820",
+    "due_date": "2017-06-30",
+    "type_id": "0",
+    "paid_date": "2017-06-30",
+    "automatic": "0",
+    "notes": "Suzuki GS750E repair (99 + 15.99, Amazon)",
+    "amount": "-114.99"
+},
+{
+    "id": "1821",
+    "due_date": "2017-06-30",
+    "type_id": "0",
+    "paid_date": "2017-06-30",
+    "automatic": "0",
+    "notes": "Suzuki GS750E registration",
+    "amount": "-104.00"
+},
+{
+    "id": "1822",
+    "due_date": "2017-07-26",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-11.84"
+},
+{
+    "id": "1823",
+    "due_date": "2017-08-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1824",
+    "due_date": "2017-08-01",
+    "type_id": "38",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-3.00"
+},
+{
+    "id": "1825",
+    "due_date": "2017-08-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1826",
+    "due_date": "2017-08-04",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.39"
+},
+{
+    "id": "1827",
+    "due_date": "2017-08-11",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "917.38"
+},
+{
+    "id": "1828",
+    "due_date": "2017-08-18",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "873.50"
+},
+{
+    "id": "1829",
+    "due_date": "2017-08-25",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "873.49"
+},
+{
+    "id": "1830",
+    "due_date": "2017-08-04",
+    "type_id": "31",
+    "paid_date": "2017-08-04",
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "100.00"
+},
+{
+    "id": "1831",
+    "due_date": "2017-08-11",
+    "type_id": "31",
+    "paid_date": "2017-08-11",
+    "automatic": "0",
+    "notes": "Rent + half phone",
+    "amount": "160.00"
+},
+{
+    "id": "1832",
+    "due_date": "2017-08-18",
+    "type_id": "31",
+    "paid_date": "2017-08-18",
+    "automatic": "0",
+    "notes": null,
+    "amount": "160.00"
+},
+{
+    "id": "1833",
+    "due_date": "2017-08-25",
+    "type_id": "31",
+    "paid_date": "2017-08-26",
+    "automatic": "0",
+    "notes": null,
+    "amount": "140.00"
+},
+{
+    "id": "1834",
+    "due_date": "2017-08-09",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1835",
+    "due_date": "2017-08-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1836",
+    "due_date": "2017-08-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1837",
+    "due_date": "2017-08-15",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1838",
+    "due_date": "2017-08-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Cycle renewed: First payment is 53.35 for 2017-06. Rest are 48.35 thru 2017-11.",
+    "amount": "-48.35"
+},
+{
+    "id": "1839",
+    "due_date": "2017-08-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1840",
+    "due_date": "2017-08-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1841",
+    "due_date": "2017-08-15",
+    "type_id": "22",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "Actually \u20ac72. Paid Jul - Dec, next payment Jan - Jun.",
+    "amount": "0.00"
+},
+{
+    "id": "1842",
+    "due_date": "2017-08-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "(186.25 from period while Chase Amazon was being replaced)",
+    "amount": "0.00"
+},
+{
+    "id": "1843",
+    "due_date": "2017-08-19",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to direct debit 2017-05-24 @ $596.89 + $3.11 (Email confirmation says $590.06???). ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-590.06"
+},
+{
+    "id": "1844",
+    "due_date": "2017-08-21",
+    "type_id": "32",
+    "paid_date": "2017-08-14",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-2225.59"
+},
+{
+    "id": "1845",
+    "due_date": "2017-08-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1846",
+    "due_date": "2017-08-25",
+    "type_id": "27",
+    "paid_date": "2017-08-22",
+    "automatic": "0",
+    "notes": "Additional disk space (BC wallet)",
+    "amount": "-4.00"
+},
+{
+    "id": "1847",
+    "due_date": "2017-08-26",
+    "type_id": "28",
+    "paid_date": "2017-08-22",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-52.07"
+},
+{
+    "id": "1848",
+    "due_date": "2017-08-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1849",
+    "due_date": "2017-08-26",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-11.84"
+},
+{
+    "id": "1850",
+    "due_date": "2017-08-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$28 @ 4.28, ~$18 @ 3.78, ~$100 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1851",
+    "due_date": "2017-08-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1852",
+    "due_date": "2017-08-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1853",
+    "due_date": "2017-08-28",
+    "type_id": "3",
+    "paid_date": "2017-09-05",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1854",
+    "due_date": "2017-08-22",
+    "type_id": "0",
+    "paid_date": "2017-08-19",
+    "automatic": "0",
+    "notes": "ATM (cycle race)",
+    "amount": "-64.00"
+},
+{
+    "id": "1855",
+    "due_date": "2017-09-01",
+    "type_id": "24",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$8000 limit 18%?",
+    "amount": "0.00"
+},
+{
+    "id": "1856",
+    "due_date": "2017-09-01",
+    "type_id": "38",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-3.00"
+},
+{
+    "id": "1857",
+    "due_date": "2017-09-01",
+    "type_id": "31",
+    "paid_date": "2017-09-01",
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "140.00"
+},
+{
+    "id": "1858",
+    "due_date": "2017-09-08",
+    "type_id": "31",
+    "paid_date": "2017-09-08",
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "150.00"
+},
+{
+    "id": "1859",
+    "due_date": "2017-09-15",
+    "type_id": "31",
+    "paid_date": "2017-09-15",
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "150.00"
+},
+{
+    "id": "1860",
+    "due_date": "2017-09-22",
+    "type_id": "31",
+    "paid_date": "2017-09-24",
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "150.00"
+},
+{
+    "id": "1861",
+    "due_date": "2017-09-29",
+    "type_id": "31",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "(830\u00f72\u00d712+100\u00f72\u00d712+312\u00f72\u00d712+50\u00f72\u00d712)\u00f752=149 ~ 150 (Starting 2017-09)",
+    "amount": "100.00"
+},
+{
+    "id": "1862",
+    "due_date": "2017-09-01",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "873.51"
+},
+{
+    "id": "1863",
+    "due_date": "2017-09-08",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "897.92"
+},
+{
+    "id": "1864",
+    "due_date": "2017-09-15",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "897.93"
+},
+{
+    "id": "1865",
+    "due_date": "2017-09-22",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "897.94"
+},
+{
+    "id": "1866",
+    "due_date": "2017-09-29",
+    "type_id": "2",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "897.92"
+},
+{
+    "id": "1867",
+    "due_date": "2017-09-06",
+    "type_id": "4",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "0.00"
+},
+{
+    "id": "1868",
+    "due_date": "2017-09-09",
+    "type_id": "33",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-18.67"
+},
+{
+    "id": "1869",
+    "due_date": "2017-09-12",
+    "type_id": "7",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "$6000 limit 18%",
+    "amount": "0.00"
+},
+{
+    "id": "1870",
+    "due_date": "2017-09-14",
+    "type_id": "8",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-50.00"
+},
+{
+    "id": "1871",
+    "due_date": "2017-09-21",
+    "type_id": "32",
+    "paid_date": "2017-09-08",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-2675.38"
+},
+{
+    "id": "1872",
+    "due_date": "2017-09-15",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Cycle renewed: First payment is 53.35 for 2017-06. Rest are 48.35 thru 2017-11.",
+    "amount": "-48.35"
+},
+{
+    "id": "1873",
+    "due_date": "2017-09-15",
+    "type_id": "23",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Payment is via Amazon card. Now includes 10\/mth for public+static IP",
+    "amount": "-60.00"
+},
+{
+    "id": "1874",
+    "due_date": "2017-09-15",
+    "type_id": "22",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "Actually \u20ac72. Paid Jul - Dec, next payment Jan - Jun.",
+    "amount": "0.00"
+},
+{
+    "id": "1875",
+    "due_date": "2017-09-15",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to auto $200\/mth 12\/9 starting 12\/11. Paid off 3\/7\/16. $3500 limit 19% (xfer'd $3000 @ 3ish% on 2016\/10\/17: $200\/mth to pay off in less than 18mths)",
+    "amount": "0.00"
+},
+{
+    "id": "1876",
+    "due_date": "2017-09-15",
+    "type_id": "21",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "5% APR (Paid off $1,169.37 10\/24) Should be no automatic payments anymore",
+    "amount": "0.00"
+},
+{
+    "id": "1877",
+    "due_date": "2017-09-18",
+    "type_id": "37",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": "(186.25 from period while Chase Amazon was being replaced)",
+    "amount": "0.00"
+},
+{
+    "id": "1878",
+    "due_date": "2017-09-19",
+    "type_id": "5",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Switched to direct debit 2017-05-24 @ $596.89 + $3.11 (Email confirmation says $590.06???). ~$49k (many ~$1-10k, some 3s, some 4s and a couple 6s, ~21k at 6)",
+    "amount": "-590.06"
+},
+{
+    "id": "1879",
+    "due_date": "2017-09-25",
+    "type_id": "27",
+    "paid_date": "2017-09-18",
+    "automatic": "0",
+    "notes": "Additional disk space (BC wallet)",
+    "amount": "-4.00"
+},
+{
+    "id": "1880",
+    "due_date": "2017-09-26",
+    "type_id": "28",
+    "paid_date": "2017-09-18",
+    "automatic": "0",
+    "notes": null,
+    "amount": "-68.87"
+},
+{
+    "id": "1881",
+    "due_date": "2017-09-23",
+    "type_id": "25",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-7.99"
+},
+{
+    "id": "1882",
+    "due_date": "2017-09-26",
+    "type_id": "36",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Motorcycle",
+    "amount": "-11.84"
+},
+{
+    "id": "1883",
+    "due_date": "2017-09-26",
+    "type_id": "27",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-12.95"
+},
+{
+    "id": "1884",
+    "due_date": "2017-09-26",
+    "type_id": "26",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "~$45k (~$26.7 @ 4.98, ~$17.7 @ 4.48, ~$64 accrued left)",
+    "amount": "-385.53"
+},
+{
+    "id": "1885",
+    "due_date": "2017-09-27",
+    "type_id": "30",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "Considering raising this to $500\/mth: reduce by 2y1m, done in ~25 months from this month",
+    "amount": "-261.00"
+},
+{
+    "id": "1886",
+    "due_date": "2017-09-27",
+    "type_id": "29",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": null,
+    "amount": "-107.01"
+},
+{
+    "id": "1887",
+    "due_date": "2017-09-28",
+    "type_id": "3",
+    "paid_date": null,
+    "automatic": "0",
+    "notes": null,
+    "amount": "-830.00"
+},
+{
+    "id": "1888",
+    "due_date": "2017-09-29",
+    "type_id": "39",
+    "paid_date": null,
+    "automatic": "1",
+    "notes": "$99\/yr ($106.92 with taxes?)",
+    "amount": "-8.91"
+}
+]
+
+}
+,{
+    "type": "table",
+    "name": "bills_item_types",
+    "database": "bills",
+    "data": 
+[
+{
+    "id": "0",
+    "name": "MISC",
+    "default_value": null,
+    "repeat_type": "0",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "1",
+    "name": "Time Warner",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "2",
+    "name": "Paycheck",
+    "default_value": "900.00",
+    "repeat_type": "2",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "3",
+    "name": "Rent",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "4",
+    "name": "Aspire",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "5",
+    "name": "FedLoan",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "6",
+    "name": "Discover CC",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "7",
+    "name": "Chase CC (Slate)",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "8",
+    "name": "Vanguard",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "21",
+    "name": "ECSI",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "22",
+    "name": "Seedwave",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "23",
+    "name": "Greenlight",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "24",
+    "name": "BoA CC",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "25",
+    "name": "Google Play Music",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "26",
+    "name": "AES",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "27",
+    "name": "Hostbrew",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "28",
+    "name": "RG&E",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "29",
+    "name": "VZW",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "30",
+    "name": "VW",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "31",
+    "name": "Rent (Mick)",
+    "default_value": "150.00",
+    "repeat_type": "2",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "32",
+    "name": "Chase CC (Amazon)",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "33",
+    "name": "Progressive",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "34",
+    "name": "Savings",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "35",
+    "name": "Balance",
+    "default_value": null,
+    "repeat_type": "0",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "36",
+    "name": "Geico",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "37",
+    "name": "Capital One",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "38",
+    "name": "Patreon",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+},
+{
+    "id": "39",
+    "name": "Amazon Prime",
+    "default_value": null,
+    "repeat_type": "1",
+    "description": null,
+    "notes": null,
+    "url": null
+}
+]
+
+}
+]
