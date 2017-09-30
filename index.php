@@ -116,28 +116,18 @@ require("items-class.php");
 <?php
 $items = new Items($config);
 
-$defaultYear = $items->defaultYear();
-$defaultMonth = $items->defaultMonth();
-
-$year = $defaultYear;
-$month = $defaultMonth;
-
-$m = array();
-if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
-  if (!empty($m[1])) {
-    $year = (int)$m[1];
-  }
-  if (!empty($m[2])) {
-    $month = (int)$m[2];
-  }
-}
-
 ?>
 
     <script type="text/javascript">
 (function() {
   'use strict';
   var app = window.app = window.app || {};
+  var defaultDate = new Date();
+  var navigationDate = defaultDate;
+  var m;
+  if (m = window.location.search.match(/\?([0-9]{4})\/([0-9]{1,2})/)) {
+    navigationDate = new Date(m[1], m[2] - 1, 1);
+  }
   app.data = {
     repeat_types: [
       {id: 0, short_name: ' ', name: "None"},
@@ -146,10 +136,10 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
     ],
     types: [],
     items: <?=json_encode($items->items($year, $month))?>,
-    year: <?=$year?>,
-    month: <?=$month?>,
-    defaultYear: <?=$defaultYear?>,
-    defaultMonth: <?=$defaultMonth?>,
+    year: navigationDate.getFullYear(),
+    month: navigationDate.getMonth() + 1,
+    defaultYear: defaultDate.getFullYear(),
+    defaultMonth: defaultDate.getMonth() + 1,
   };
 })();
     </script>
