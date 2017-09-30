@@ -45,6 +45,7 @@ var app = window.app = window.app || {};
 
       self.start = function() {
         app.router.navigate('?' + moment(app.viewmodel.app.date()).format("YYYY/M"), {trigger: false, replace: true});
+        self.fetch();
         self.updateTitle();
       };
 
