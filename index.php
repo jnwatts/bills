@@ -10,7 +10,7 @@ require("items-class.php");
     <base href="<?=$config["base"]?>">
   </head>
   <body>
-    <div id="items_busy"></div>
+    <div id="busy"></div>
 
     <div>
       TODO:
@@ -187,7 +187,7 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
     }
   });
 
-  $('#items_busy').fadeOut({duration: 250});
+  $('#busy').fadeOut({duration: 250});
 
   $(".currency").maskMoney({allowNegative: true, thousands:',', decimal:'.', affixesStay: false});
 
@@ -195,11 +195,11 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
   $.ajaxSetup({
       beforeSend:function(){
           // show gif here, eg:
-          $("#items_busy").show();
+          $("#busy").show();
       },
       complete:function(){
           // hide gif here, eg:
-          $('#items_busy').fadeOut({duration: 250});
+          $('#busy').fadeOut({duration: 250});
       }
   });
 

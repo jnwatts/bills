@@ -96,7 +96,7 @@ tr.view {
 input {
   border: 0;
 }
-#items_busy {
+#busy {
   position: fixed;
   top: 50%;
   left: 50%;
