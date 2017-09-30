@@ -1,0 +1,13 @@
+{
+    "name": "sroz/bills",
+    "description": "Simple bill tracking application",
+    "type": "project",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Josh Watts",
+            "email": "josh+github@sroz.net"
+        }
+    ],
+    "require": {}
+}

@@ -1,3 +1,5 @@
 config.php
 config.json
 *.sublime*
+
+/vendor/
