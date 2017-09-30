@@ -5,7 +5,7 @@
     defaults: {
       automatic: false,
       due_date: new Date(),
-      type_id: 0,
+      type_id: 1,
       amount: "0.00",
       paid_date: null,
       notes: null,
