@@ -86,7 +86,7 @@ var app = window.app = window.app || {};
           self.date(new Date(year, month - 1, 1));
         }
         var m = moment(self.date());
-        var d = {year: m.year(), month: m.month() + 1};
+        var d = {'date': m.year().toString() + '-'  + (m.month() + 1).toString()};
         app.items.fetch({data: d});
         self.updateTitle();
       };
