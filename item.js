@@ -32,7 +32,7 @@
 
   window.ItemList = Backbone.Collection.extend({
     url: function() {
-      var url = app.base + 'data.php?items';
+      var url = app.base + 'api/v1/item';
       return url;
     },
 

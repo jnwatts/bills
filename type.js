@@ -33,7 +33,7 @@
 
   window.TypeList = Backbone.Collection.extend({
     url: function() {
-      var url = app.base + 'api/type';
+      var url = app.base + 'api/v1/type';
       return url;
     },
 
