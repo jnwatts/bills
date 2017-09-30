@@ -165,9 +165,10 @@ $items = new Items($config);
   app.repeat_types.reset(app.data.repeat_types);
   app.types.fetch();
   app.items.reset(app.data.items.map(Item.prototype.parse));
-  app.viewmodel = {};
-  app.viewmodel.repeat_types = kb.collectionObservable(app.repeat_types);
-  app.viewmodel.types = kb.collectionObservable(app.types);
+  app.viewmodel = {
+    repeat_types: kb.collectionObservable(app.repeat_types),
+    types: kb.collectionObservable(app.types),
+  };
   app.viewmodel.app = new AppViewModel();
   kb.applyBindings(app.viewmodel.app, $('body')[0]);
   
