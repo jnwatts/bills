@@ -11,11 +11,13 @@ var app = window.app = window.app || {};
   };
 
   window.parseDate = function(str) {
+    var result = null;
     if (str) {
-      return moment(str).toDate(); //new Date(y,m,d);
-    } else {
-      return null;
+      // We expect ONLY the date from the DB. Strip any time or zone info
+      str = str.replace(/T[0-9:]+.*/, '');
+      result = moment(str).toDate();
     }
+    return result;
   };
 
   window.formatMonth = function(date) {
