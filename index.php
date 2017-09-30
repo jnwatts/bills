@@ -95,7 +95,7 @@ require("items-class.php");
     </div>
 
     <div id="content">
-      <table id="items" data-bind="visible: items().length > 0">
+      <table id="items">
         <thead>
           <tr>
             <th><input type="checkbox" data-bind="visible: editMode, triState: allOrNoneItems"></th>
