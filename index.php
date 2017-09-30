@@ -53,10 +53,10 @@ require("items-class.php");
     <script type="text/html" id="view-item-template">
       <tr class="view" data-bind="css: {paid: paid(), unpaid: unpaid(), late: late(), zero: amount() == 0}, event: { dblclick: $root.editStart }">
         <td cass="operations"><div class="placeholder"></div></td>
-        <td class="name" data-bind="text: name"></td>
+        <td class="name" data-bind="text: name()"></td>
         <td class="amount" data-bind="css: {negative: amount() < 0, positive: amount() > 0, fuzzed: $root.fuzzMode()}, text: formatCurrency(amount())"></td>
         <td class="due_date" data-bind="text: formatDate(due_date())"></td>
-        <td class="repeat" data-bind="text: repeat_type().short_name()"></td>
+        <td class="repeat" data-bind="text: repeat_type().short_name"></td>
         <td class="automatic" data-bind="text: automatic() ? 'X' : ''"></td>
         <td class="paid_date" data-bind="text: automatic() ? '' : formatDate(paidDate())"></td>
         <td class="notes" data-bind="text: notes"></td>
@@ -144,7 +144,7 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
       {id: 1, short_name: 'M', name: "Monthly"},
       {id: 2, short_name: 'W', name: "Weekly"}
     ],
-    types: <?=json_encode($items->types())?>,
+    types: [],
     items: <?=json_encode($items->items($year, $month))?>,
     year: <?=$year?>,
     month: <?=$month?>,
@@ -165,6 +165,7 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
     <script type="text/javascript" src="pie.js"></script>
     <script type="text/javascript" src="format.js"></script>
     <script type="text/javascript" src="month-date-picker.js"></script>
+    <script type="text/javascript" src="type.js"></script>
     <script type="text/javascript" src="item.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
@@ -172,7 +173,7 @@ if (preg_match('#([0-9]{4})/?([0-9]{0,2})?#', $_SERVER['QUERY_STRING'], $m)) {
   'use strict';
   
   app.repeat_types.reset(app.data.repeat_types);
-  app.types.reset(app.data.types);
+  app.types.fetch();
   app.items.reset(app.data.items.map(Item.prototype.parse));
   app.viewmodel = {};
   app.viewmodel.repeat_types = kb.collectionObservable(app.repeat_types);

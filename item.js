@@ -65,7 +65,7 @@
 
       self.name = ko.computed(function() {
         var type = self.type();
-        return type ? type.name() : '';
+        return type ? type.name : '';
       });
 
       self.paid = ko.computed(function() {
