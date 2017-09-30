@@ -1,5 +1,5 @@
 <?php
-require("config.php");
+require("../config.php");
 require("items-class.php");
 
 $items = new Items($config);

@@ -3,7 +3,7 @@
 <html lang="en" ng-app="StarterApp">
   <head>
     <title>Bills - Types</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <base href="<?=$config["base"]?>">
   </head>
   <body>
@@ -73,14 +73,14 @@
 })();
     </script>
 
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.maskMoney.js"></script>
-    <script type="text/javascript" src="knockback-full-stack.js"></script>
-    <script type="text/javascript" src="moment.min.js"></script>
-    <script type="text/javascript" src="knockout-tristate.js"></script>
-    <script type="text/javascript" src="format.js"></script>
-    <script type="text/javascript" src="type.js"></script>
-    <script type="text/javascript" src="app_types.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="js/lib/knockback-full-stack.js"></script>
+    <script type="text/javascript" src="js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/lib/knockout-tristate.js"></script>
+    <script type="text/javascript" src="js/format.js"></script>
+    <script type="text/javascript" src="js/type.js"></script>
+    <script type="text/javascript" src="js/app_types.js"></script>
     <script type="text/javascript">
 (function() {
   'use strict';

@@ -5,7 +5,7 @@ require("config.php");
 <html lang="en" ng-app="StarterApp">
   <head>
     <title>Bills</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <base href="<?=$config["base"]?>">
   </head>
   <body>
@@ -36,12 +36,12 @@ require("config.php");
         Bills
       </h1>
       <button data-bind="click: monthPrev">
-        <img src="ic_navigate_before_black_24px.svg">
+        <img src="img/ic_navigate_before_black_24px.svg">
       </button>
       <!-- <span data-bind="datePicker: date"></span> -->
       <input type="month" data-bind="monthPicker: date">
       <button data-bind="click: monthNext">
-        <img src="ic_navigate_next_black_24px.svg">
+        <img src="img/ic_navigate_next_black_24px.svg">
       </button>
     </div><!-- toolbar -->
 
@@ -138,20 +138,20 @@ require("config.php");
 })();
     </script>
 
-    <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.maskMoney.js"></script>
-    <script type="text/javascript" src="knockback-full-stack.js"></script>
-    <script type="text/javascript" src="highcharts.js"></script>
-    <script type="text/javascript" src="highcharts-more.js"></script>
-    <script type="text/javascript" src="moment.min.js"></script>
-    <script type="text/javascript" src="knockout-tristate.js"></script>
-    <script type="text/javascript" src="chart.js"></script>
-    <script type="text/javascript" src="pie.js"></script>
-    <script type="text/javascript" src="format.js"></script>
-    <script type="text/javascript" src="month-date-picker.js"></script>
-    <script type="text/javascript" src="type.js"></script>
-    <script type="text/javascript" src="item.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="js/lib/knockback-full-stack.js"></script>
+    <script type="text/javascript" src="js/lib/highcharts.js"></script>
+    <script type="text/javascript" src="js/lib/highcharts-more.js"></script>
+    <script type="text/javascript" src="js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="js/lib/knockout-tristate.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/pie.js"></script>
+    <script type="text/javascript" src="js/format.js"></script>
+    <script type="text/javascript" src="js/month-date-picker.js"></script>
+    <script type="text/javascript" src="js/type.js"></script>
+    <script type="text/javascript" src="js/item.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
 (function() {
   'use strict';
