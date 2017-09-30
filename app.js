@@ -39,14 +39,12 @@ var app = window.app = window.app || {};
         if (new_search != window.location.search) {
           self.fetch();
           app.router.navigate('/' + new_search);
-          self.updateTitle();
         }
       });
 
       self.start = function() {
         app.router.navigate('?' + moment(app.viewmodel.app.date()).format("YYYY/M"), {trigger: false, replace: true});
         self.fetch();
-        self.updateTitle();
       };
 
       self.updateTitle = function() {
@@ -80,13 +78,17 @@ var app = window.app = window.app || {};
         self.date(m.toDate());
       };
 
-      self.fetch = function() {
+      self.fetch = function(year, month) {
         if (self.editMode()) {
           app.items.saveAll();
+        }
+        if (year && month) {
+          self.date(new Date(year, month - 1, 1));
         }
         var m = moment(self.date());
         var d = {year: m.year(), month: m.month() + 1};
         app.items.fetch({data: d});
+        self.updateTitle();
       };
 
       self.editStart = function() {
@@ -238,9 +240,7 @@ var app = window.app = window.app || {};
         year = app.data.defaultYear;
         month = app.data.defaultMonth;
       }
-      app.viewmodel.app.date(moment({year: year, month: month - 1}).toDate());
-      app.viewmodel.app.updateTitle();
-      app.viewmodel.app.fetch();
+      app.viewmodel.app.fetch(year, month);
     },
   });
 
