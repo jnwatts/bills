@@ -41,7 +41,7 @@ require("config.php");
       <!-- <span data-bind="datePicker: date"></span> -->
       <input type="month" data-bind="monthPicker: date">
       <button data-bind="click: monthNext">
-        <img src="ic_navigate_next_black_24px.svg"></img>
+        <img src="ic_navigate_next_black_24px.svg">
       </button>
     </div><!-- toolbar -->
 
