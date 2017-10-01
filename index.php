@@ -11,14 +11,6 @@ require("config.php");
   <body>
     <div id="busy"></div>
 
-    <div>
-      TODO:
-      <ol>
-        <li>Update chart/pie after major changes (use settimeout and dirty flag to prevent multiple refreshes)</li>
-        <li>Knockback is working well, but if not, maybe <a href="https://facebook.github.io/react/docs/tutorial.html">React?</a></li>
-      </ol>
-    </div>
-
     <div id="toolbar">
       <h1>
         Bills
@@ -188,5 +180,15 @@ require("config.php");
   setTimeout(function() { app.updateChart(); app.updatePie(); }, 750);
 })();
     </script>
+
+
+    <div>
+      <h2>TODO:</h2>
+      <ol>
+        <li>Update chart/pie after major changes (use settimeout and dirty flag to prevent multiple refreshes)</li>
+        <li>Knockback is working well, but if not, maybe <a href="https://facebook.github.io/react/docs/tutorial.html">React?</a></li>
+      </ol>
+    </div>
+
   </body>
 </html>
