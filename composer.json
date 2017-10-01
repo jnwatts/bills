@@ -9,5 +9,7 @@
             "email": "josh+github@sroz.net"
         }
     ],
-    "require": {}
+    "require": {
+        "altorouter/altorouter": "^1.2"
+    }
 }
