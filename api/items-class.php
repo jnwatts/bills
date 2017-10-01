@@ -57,6 +57,21 @@ Class Items
         }
     }
 
+    function begin()
+    {
+        $this->db->conn->autocommit(FALSE);
+    }
+
+    function commit()
+    {
+        $this->db->conn->commit();
+    }
+
+    function rollback()
+    {
+        $this->db->conn->rollback();
+    }
+
     function error($msg, $code=NULL)
     {
         if (is_int($code)) {
