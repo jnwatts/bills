@@ -26,7 +26,7 @@
 
     parse: function(response, options) {
       var i = response;
-      i.default_value = parseFloat(i.default_value).toFixed(2);
+      i.default_value = i.default_value ? parseFloat(i.default_value).toFixed(2) : null;
       return i;
     },
   });
