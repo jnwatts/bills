@@ -14,13 +14,8 @@ require("config.php");
     <div>
       TODO:
       <ol>
-        <li>Next/prev loading is broken... month changes, but data set does not. :-(</li>
         <li>Update chart/pie after major changes (use settimeout and dirty flag to prevent multiple refreshes)</li>
-        <li>Save isn't 100% sync: After successful save, edit/unedit will re-sync same (not further modified) items.. check bbjs' changedAttributes()?</li>
-        <li>What is /actually/ changing on everything... every save updates every single friggin' item.</li>
-        <li>Transform/replace PHP side with more RESTful interface compatible with Backbone/etc</li>
         <li>Knockback is working well, but if not, maybe <a href="https://facebook.github.io/react/docs/tutorial.html">React?</a></li>
-        <li>Virtual column to show balance (re-use for displaying graph!)</li>
       </ol>
     </div>
 
