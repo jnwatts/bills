@@ -7,8 +7,8 @@
 */
 
 define("DEFAULT_VIEW",  "2w");
-define("ITEM_INSTANCES", "bills_item_instances");
-define("ITEM_TYPES", "bills_item_types");
+define("ITEM_INSTANCES", "items");
+define("ITEM_TYPES", "types");
 
 Class Items
 {
@@ -87,12 +87,15 @@ Class Items
                 );
     }
 
-    function items($year, $month, $where = "") {
+    function items($year, $month = 0, $where = "") {
         $conn = &$this->db->conn;
-        if ($year > 0) {
-            $where .= " AND YEAR(`due_date`) = ".$year." AND MONTH(`due_date`) = ".$month;
+        if ($year > 0 && $month > 0) {
+            $where .= " AND YEAR(`due_date`) = ".(int)$year." AND MONTH(`due_date`) = ".(int)$month;
+        } else if ($year > 0) {
+            // $year is id
+            $where .= " AND I.`id` = ".(int)$year;
         }
-        $sql_result = $conn->query("SELECT I.`id`, `automatic`, DATE_FORMAT(`due_date`, '%Y-%m-%d') AS due_date, `repeat_type`, `type_id`, `amount`, DATE_FORMAT(`paid_date`, '%Y-%m-%d') AS paid_date, I.`notes` FROM `bills_item_instances` AS I, `bills_item_types` AS T WHERE I.`type_id` = T.`id` ".$where. " ORDER BY `due_date` ASC, T.`name` ASC");
+        $sql_result = $conn->query("SELECT I.`id`, `automatic`, DATE_FORMAT(`due_date`, '%Y-%m-%d') AS due_date, `repeat_type`, `type_id`, `amount`, DATE_FORMAT(`paid_date`, '%Y-%m-%d') AS paid_date, I.`notes` FROM `items` AS I, `types` AS T WHERE I.`type_id` = T.`id` ".$where. " ORDER BY `due_date` ASC, T.`name` ASC");
 
         $result = array();
         if ($sql_result) {
@@ -101,7 +104,7 @@ Class Items
             }
             $sql_result->close();
         } else {
-            $this->error("Query failed: ".$conn->error, 500);
+            throw new Exception($conn->error);
         }
 
         return $result;
@@ -138,7 +141,7 @@ Class Items
             $this->error("Invalid column", 500);
             return;
         }
-        $sql = $conn->prepare("UPDATE bills_item_instances SET `".$column."` = ? WHERE `id` = ?");
+        $sql = $conn->prepare("UPDATE `items` SET `".$column."` = ? WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
@@ -146,7 +149,7 @@ Class Items
                 $this->error("Failed to bind param".$sql->error, 500);
             } else {
                 if (!$sql->execute()) {
-                    $this->error("Failed to execute update", 500);
+                    throw new Exception($conn->error);
                 } else {
                     $result = array("value" => $this->getCol($id, $column, ITEM_INSTANCES));
                 }
@@ -180,7 +183,7 @@ Class Items
             $values[] = $value;
         }
 
-        $sql = $conn->prepare("UPDATE bills_item_instances SET " . implode(",", $columns) . " WHERE `id` = ?");
+        $sql = $conn->prepare("UPDATE `items` SET " . implode(",", $columns) . " WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
@@ -190,7 +193,7 @@ Class Items
                 $this->error("Failed to bind param".$sql->error, 500);
             } else {
                 if (!$sql->execute()) {
-                    $this->error("Failed to execute update", 500);
+                    throw new Exception($conn->error);
                 } else {
                     $items = $this->items(0, 0, "AND I.`id` = ".$id);
                     if (count($items) > 0) {
@@ -221,7 +224,7 @@ Class Items
             } else {
                 $sql_result = $sql->execute();
                 if (!$sql_result) {
-                    $this->error("Failed to execute update", 500);
+                    throw new Exception($conn->error);
                 } else {
                     $sql->bind_result($result);
                     $sql->fetch();
@@ -255,7 +258,7 @@ Class Items
                 $values[] = $value;
             }
             $sql_result = false;
-            $sql = $conn->prepare("INSERT INTO `bills_item_instances` (" . implode(",", $columns) . ") VALUES (" . implode(",", $placeholders) . ")");
+            $sql = $conn->prepare("INSERT INTO `items` (" . implode(",", $columns) . ") VALUES (" . implode(",", $placeholders) . ")");
             if ($sql) {
                 $params = str_repeat('s', count($values));
                 if ($sql->bind_param($params, ...$values)) {
@@ -263,17 +266,13 @@ Class Items
                 }
             }
         } else {
-            $sql_result = $conn->query("INSERT INTO `bills_item_instances` (`due_date`) VALUES ('".date("o-n-d")."')");
+            $sql_result = $conn->query("INSERT INTO `items` (`due_date`) VALUES ('".date("o-n-d")."')");
         }
 
         if ($sql_result) {
-            $result = $this->items(0, 0, " AND I.`id` = ".$conn->insert_id)[0];
+            $result = $this->items($conn->insert_id)[0];
         } else {
-            var_dump($item);
-            var_dump($columns);
-            var_dump($values);
-            var_dump($params);
-            $this->error("Query failed: ".$conn->error, 500);
+            throw new Exception($conn->error);
         }
 
         return $result;
@@ -283,7 +282,7 @@ Class Items
         $result = array("result" => false);
         $conn = &$this->db->conn;
         $id = intval($id);
-        $sql = $conn->prepare("DELETE FROM bills_item_instances WHERE `id` = ?");
+        $sql = $conn->prepare("DELETE FROM `items` WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
@@ -291,7 +290,7 @@ Class Items
                 $this->error("Failed to bind param".$sql->error, 500);
             } else {
                 if (!$sql->execute()) {
-                    $this->error("Failed to execute update", 500);
+                    throw new Exception($conn->error);
                 } else {
                     $result = array("result" => true);
                 }
@@ -301,10 +300,14 @@ Class Items
         return $result;
     }
 
-    function types($where = "") {
+    function types($id = 0, $where = "") {
         $conn = &$this->db->conn;
 
-        $sql_result = $conn->query("SELECT `id`, `name`, `description`, `repeat_type`, `default_value`, `notes`, `url` FROM `bills_item_types` ".$where." ORDER BY `name` ASC");
+        if ($id > 0) {
+            $where = 'WHERE `id` = '.(int)$id;
+        }
+
+        $sql_result = $conn->query("SELECT `id`, `name`, `description`, `repeat_type`, `default_value`, `notes`, `url` FROM `types` ".$where." ORDER BY `name` ASC");
 
         $result = array();
         if ($sql_result) {
@@ -313,38 +316,52 @@ Class Items
             }
             $sql_result->close();
         } else {
-            $this->error("Query failed: ".$conn->error, 500);
+            throw new Exception($conn->error);
         }
 
         return $result;
     }
 
-    function updateType($id, $column, $value) {
-        $result = array();
+    function updateType($type) {
+        $result = null;
         $conn = &$this->db->conn;
-        $id = intval($id);
-        $column = $conn->real_escape_string($column);
-        $value = $conn->real_escape_string($value);
-        if (!$this->validColumn($column, ITEM_TYPES)) {
-            $this->error("Invalid column", 500);
-            return;
+        if (!isset($type->id)) {
+            return $this->addInstance($type);
         }
-        if ($column == "frequency") {
-            $value = strtoupper($value);
-            if (!in_array($value, array("W", "M", "Y")))
-                $this->error("Invalid value for Frequency", 500);
+        $id = intval($type->id);
+        $columns = [];
+        $values = [];
+        foreach ($this->columns(ITEM_TYPES) as $column) {
+            if (!property_exists($type, $column)) {
+                continue;
+            }
+
+            $value = $type->{$column};
+
+            if (strlen($value) == 0) {
+                $value = NULL;
+            }
+
+            $columns[] = "`".$column."` = ?";
+            $values[] = $value;
         }
-        $sql = $conn->prepare("UPDATE `bills_item_types` SET `".$column."` = ? WHERE `id` = ?");
+
+        $sql = $conn->prepare("UPDATE `types` SET " . implode(",", $columns) . " WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
-            if (!$sql->bind_param('si', $value, $id)) {
+            $params = str_repeat('s', count($values)) . "i";
+            $values[] = $id;
+            if (!$sql->bind_param($params, ...$values)) {
                 $this->error("Failed to bind param".$sql->error, 500);
             } else {
                 if (!$sql->execute()) {
-                    $this->error("Failed to execute update", 500);
+                    throw new Exception($sql->error);
                 } else {
-                    $result = array("value" => $this->getCol($id, $column, ITEM_TYPES));
+                    $types = $this->types($id);
+                    if (count($types) > 0) {
+                        $result = $types[0];
+                    }
                 }
             }
             $sql->close();
@@ -355,10 +372,10 @@ Class Items
     function addType() {
         $conn = &$this->db->conn;
 
-        $sql_result = $conn->query("INSERT INTO `bills_item_types` () VALUES ()");
+        $sql_result = $conn->query("INSERT INTO `types` () VALUES ()");
 
         if ($sql_result) {
-            $result = $this->types("WHERE `id` = ".$conn->insert_id)[0];
+            $result = $this->types($conn->insert_id)[0];
         } else {
             $this->error("Query failed: ".$conn->error, 500);
         }
@@ -370,7 +387,7 @@ Class Items
         $result = array("result" => false);
         $conn = &$this->db->conn;
         $id = intval($id);
-        $sql = $conn->prepare("DELETE FROM bills_item_types WHERE `id` = ?");
+        $sql = $conn->prepare("DELETE FROM `types` WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
