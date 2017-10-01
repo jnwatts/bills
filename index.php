@@ -19,13 +19,6 @@ require("config.php");
       </ol>
     </div>
 
-    <table id="charts">
-    <tr>
-    <td><div id="chart" style="display: none">&nbsp;</div></td>
-    <td><div id="pie" style="display: none">&nbsp;</div></td>
-    </tr>
-    </table><!-- charts -->
-
     <div id="toolbar">
       <h1>
         Bills
@@ -39,6 +32,29 @@ require("config.php");
         <img src="img/ic_navigate_next_black_24px.svg">
       </button>
     </div><!-- toolbar -->
+
+    <div>
+      <button data-bind="click: updateChart">Chart</button>
+      <button data-bind="click: updatePie">Pie</button>
+      <button data-bind="click: addItem">Add</button>
+      <button data-bind="click: duplicateItems, enable: itemsSelected" title="Duplicate selected items to next month">Duplicate</button>
+      <button data-bind="click: deleteItems, enable: itemsSelected">Delete</button>
+      <label>
+        <input type="checkbox" data-bind="checked: editMode">
+        Edit
+      </label>
+      <label>
+        <input type="checkbox" data-bind="checked: fuzzMode">
+        Fuzz
+      </label>
+    </div>
+
+    <table id="charts">
+    <tr>
+    <td><div id="chart" style="display: none">&nbsp;</div></td>
+    <td><div id="pie" style="display: none">&nbsp;</div></td>
+    </tr>
+    </table><!-- charts -->
 
     <datalist id="types" data-bind="foreach: types">
         <option data-bind="value: id, text: name"></option>
@@ -71,22 +87,6 @@ require("config.php");
         <td class="notes"><div><input type="text" data-bind="value: notes"></div></td>
       </tr>
     </script>
-
-    <div>
-      <button data-bind="click: updateChart">Chart</button>
-      <button data-bind="click: updatePie">Pie</button>
-      <button data-bind="click: addItem">Add</button>
-      <button data-bind="click: duplicateItems, enable: itemsSelected" title="Duplicate selected items to next month">Duplicate</button>
-      <button data-bind="click: deleteItems, enable: itemsSelected">Delete</button>
-      <label>
-        <input type="checkbox" data-bind="checked: editMode">
-        Edit
-      </label>
-      <label>
-        <input type="checkbox" data-bind="checked: fuzzMode">
-        Fuzz
-      </label>
-    </div>
 
     <div id="content">
       <table id="items">
