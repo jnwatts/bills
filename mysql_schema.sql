@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bills_item_instances`
+-- Table structure for table `items`
 --
 
-CREATE TABLE `bills_item_instances` (
+CREATE TABLE `items` (
   `id` int(10) UNSIGNED NOT NULL,
   `due_date` date NOT NULL,
   `type_id` int(10) UNSIGNED DEFAULT '0',
@@ -39,10 +39,10 @@ CREATE TABLE `bills_item_instances` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bills_item_types`
+-- Table structure for table `types`
 --
 
-CREATE TABLE `bills_item_types` (
+CREATE TABLE `types` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(32) COLLATE utf8_bin NOT NULL,
   `default_value` decimal(10,2) DEFAULT NULL,
@@ -57,17 +57,17 @@ CREATE TABLE `bills_item_types` (
 --
 
 --
--- Indexes for table `bills_item_instances`
+-- Indexes for table `items`
 --
-ALTER TABLE `bills_item_instances`
+ALTER TABLE `items`
   ADD PRIMARY KEY (`id`),
   ADD KEY `due_date` (`due_date`),
   ADD KEY `item_type_id_due_date` (`type_id`) USING BTREE;
 
 --
--- Indexes for table `bills_item_types`
+-- Indexes for table `types`
 --
-ALTER TABLE `bills_item_types`
+ALTER TABLE `types`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`);
 
@@ -76,24 +76,24 @@ ALTER TABLE `bills_item_types`
 --
 
 --
--- AUTO_INCREMENT for table `bills_item_instances`
+-- AUTO_INCREMENT for table `items`
 --
-ALTER TABLE `bills_item_instances`
+ALTER TABLE `items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
--- AUTO_INCREMENT for table `bills_item_types`
+-- AUTO_INCREMENT for table `types`
 --
-ALTER TABLE `bills_item_types`
+ALTER TABLE `types`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `bills_item_instances`
+-- Constraints for table `items`
 --
-ALTER TABLE `bills_item_instances`
-  ADD CONSTRAINT `bills_item_instances_ibfk_1` FOREIGN KEY (`type_id`) REFERENCES `bills_item_types` (`id`) ON DELETE CASCADE;
+ALTER TABLE `items`
+  ADD CONSTRAINT `items_ibfk_1` FOREIGN KEY (`type_id`) REFERENCES `types` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
