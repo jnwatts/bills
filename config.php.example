@@ -1,10 +1,24 @@
 <?php
 
-$config["base"] = "/bills/";
-$config["host"] = "localhost";
-$config["user"] = "bills";
-$config["pass"] = "6FMXE4VjNU5RqtVL";
-$config["database"] = "bills";
-$config["table_prefix"] = "bills_";
+$config = [];
+$env = isset($env) ? $env : "production";
+
+if ($env == "debug") {
+	$config = [
+		"base" => "/bills/",
+		"host" => "localhost",
+		"database" => "db",
+		"user" => "user",
+		"pass" => "pass",
+	];
+} else {
+	$config = [
+		"base" => "/bills/",
+		"host" => "localhost",
+		"database" => "db",
+		"user" => "user",
+		"pass" => "pass",
+	];
+}
 
 ?>
