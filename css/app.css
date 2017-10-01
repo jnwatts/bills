@@ -1,5 +1,9 @@
 table#charts, table#charts th, table#charts td {
   border: none;
+  height: 400px;
+  border: 0px;
+  border-collapse: collapse;
+  padding: 0px;
 }
 table, th , td {
   border: 1px solid grey;
