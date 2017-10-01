@@ -28,7 +28,17 @@ Class ItemsController extends Controller
     function create()
     {
         $data = $this->readInput();
-        return $this->items->addInstance($data);
+        if (is_array($data)) {
+            $this->items->begin();
+            $results = [];
+            foreach ($data as $d) {
+                $results[] = $this->items->addInstance($d);
+            }
+            $this->items->commit();
+            return $results;
+        } else {
+            return $this->items->addInstance($data);
+        }
     }
 
     function get($id)
