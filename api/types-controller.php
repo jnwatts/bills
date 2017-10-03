@@ -1,7 +1,6 @@
 <?php
-
 require_once(__DIR__ . '/controller.php');
-require_once(__DIR__ . '/items-class.php');
+require_once(__DIR__ . '/types-model.php');
 
 Class TypesController extends Controller
 {
@@ -9,23 +8,23 @@ Class TypesController extends Controller
 
     function __construct($params)
     {
-        $this->items = new Items($params);
+        $this->types = new TypesModel($params);
     }
 
     function find()
     {
-        return $this->items->types();
+        return $this->types->find();
     }
 
     function create()
     {
         $data = $this->readInput();
-        return $this->items->addType($data);
+        return $this->types->create($data);
     }
 
     function get($id)
     {
-        $result = $this->items->types($id);
+        $result = $this->types->get($id);
         if (!$result)
             $result = $this->error(404);
         return $result;
@@ -38,7 +37,7 @@ Class TypesController extends Controller
 
         $data = $this->readInput();
         if (isset($data->id) && $data->id == $id) {
-            $result = $this->items->updateType($data);
+            $result = $this->types->update($data);
         } else {
             $result = $this->error(400);
         }
@@ -50,7 +49,7 @@ Class TypesController extends Controller
         if ($id == 1)
             return $this->error(403);
 
-        return $this->items->removeType($id);
+        return $this->types->delete($id);
     }
 }
 
