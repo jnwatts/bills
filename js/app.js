@@ -60,7 +60,7 @@ var app = window.app = window.app || {};
       });
 
       self.editMode = ko.observable(false);
-      self.fuzzMode = ko.observable(true);
+      self.fuzzMode = ko.observable(false);
 
       self.itemTemplate = function() {
         return self.editMode() ? 'edit-item-template' : 'view-item-template';
