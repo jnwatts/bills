@@ -9,13 +9,6 @@
   <body>
     <div id="busy"></div>
 
-    <div>
-      TODO:
-      <ol>
-        <li>Rewrite the types layout ;-)</li>
-      </ol>
-    </div>
-
     <div id="toolbar">
       <h1>
         Bills - Types
