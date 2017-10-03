@@ -8,6 +8,11 @@ Class Controller
         404 => 'Not found',
     ];
 
+    function params()
+    {
+        return $_REQUEST;
+    }
+
     function readInput()
     {
         return json_decode(file_get_contents("php://input"));
