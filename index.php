@@ -35,11 +35,11 @@ require("config.php");
       <button data-bind="click: duplicateItems, enable: itemsSelected" title="Duplicate selected items to next month">Duplicate</button>
       <button data-bind="click: deleteItems, enable: itemsSelected">Delete</button>
       <label>
-        <input type="checkbox" data-bind="checked: editMode">
+        <input type="checkbox" data-size="small" data-bind="bootstrapToggleOn: editMode">
         Edit
       </label>
       <label>
-        <input type="checkbox" data-bind="checked: fuzzMode">
+        <input type="checkbox" data-size="small" data-bind="bootstrapToggleOn: fuzzMode">
         Fuzz
       </label>
     </div>
