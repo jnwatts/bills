@@ -27,6 +27,7 @@
     parse: function(response, options) {
       var i = response;
       i.default_value = i.default_value ? parseFloat(i.default_value).toFixed(2) : null;
+      i.repeat_type = parseInt(i.repeat_type);
       return i;
     },
   });
