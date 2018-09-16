@@ -34,7 +34,11 @@ Class TypesModel extends Model
 
     function get($id)
     {
-        return $this->select("`id` = ".(int)$id);
+        $result = $this->select("`id` = ".(int)$id);
+        if (isset($result[0]))
+            return $result[0];
+        else
+            return NULL;
     }
 
     function create($item)

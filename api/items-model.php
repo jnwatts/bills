@@ -42,7 +42,11 @@ class ItemsModel extends Model
 
     function get($id)
     {
-        return $this->select("I.`id` = ".(int)$id);
+        $result = $this->select("I.`id` = ".(int)$id);
+        if (isset($result[0]))
+            return $result[0];
+        else
+            return NULL;
     }
 
     function create($item)
