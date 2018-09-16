@@ -14,7 +14,7 @@
 
     <div id="toolbar">
       <h1>
-        Bills - Types
+        <a href="">Bills</a> - Types
       </h1>
       <button data-bind="click: saveTypes">Save</button>
       <button data-bind="click: addType">Add</button>
