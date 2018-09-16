@@ -14,6 +14,7 @@
     toJSON: function() {
       var i = _.clone(this.attributes);
       i.automatic = (i.automatic ? 1 : 0).toString();
+      i.amount = window.formatCurrency(i.amount);
       i.due_date = formatDate(i.due_date);
       i.paid_date = formatDate(i.paid_date);
       return i;
@@ -22,7 +23,7 @@
     parse: function(response, options) {
       var i = response;
       i.automatic = (i.automatic != '0');
-      i.amount = parseFloat(i.amount).toFixed(2);
+      i.amount = window.formatCurrency(i.amount);
       i.due_date = parseDate(i.due_date);
       i.paid_date = i.paid_date ? parseDate(i.paid_date) : undefined;
       return i;
