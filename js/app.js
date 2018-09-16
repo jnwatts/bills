@@ -107,6 +107,10 @@ var app = window.app = window.app || {};
         return app.updatePie();
       };
 
+      self.editTypes = function() {
+        window.location.href = app.base + 'types.php';
+      };
+
       self.addItem = function() {
         var item = new Item();
         app.items.push(item);

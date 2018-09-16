@@ -44,6 +44,10 @@ require("config.php");
       </label>
     </div>
 
+    <div>
+      <button data-bind="click: editTypes">Edit types</button>
+    </div>
+
     <table id="charts">
     <tr>
     <td><div id="chart" style="display: none">&nbsp;</div></td>
