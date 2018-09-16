@@ -5,6 +5,9 @@ require("config.php");
 <html lang="en" ng-app="StarterApp">
   <head>
     <title>Bills</title>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-toggle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle-fixup.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <base href="<?=$config["base"]?>">
   </head>
@@ -132,6 +135,10 @@ require("config.php");
     <script type="text/javascript" src="js/lib/highcharts-more.js"></script>
     <script type="text/javascript" src="js/lib/moment.min.js"></script>
     <script type="text/javascript" src="js/lib/knockout-tristate.js"></script>
+    <script type="text/javascript" src="js/lib/popper.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-toggle.js"></script>
+    <script type="text/javascript" src="js/bootstrap-toggle.js"></script>
     <script type="text/javascript" src="js/chart.js"></script>
     <script type="text/javascript" src="js/pie.js"></script>
     <script type="text/javascript" src="js/format.js"></script>

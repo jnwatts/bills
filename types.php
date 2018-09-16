@@ -3,6 +3,9 @@
 <html lang="en" ng-app="StarterApp">
   <head>
     <title>Bills - Types</title>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-toggle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle-fixup.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <base href="<?=$config["base"]?>">
   </head>
@@ -71,6 +74,10 @@
     <script type="text/javascript" src="js/lib/knockback-full-stack.js"></script>
     <script type="text/javascript" src="js/lib/moment.min.js"></script>
     <script type="text/javascript" src="js/lib/knockout-tristate.js"></script>
+    <script type="text/javascript" src="js/lib/popper.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap-toggle.js"></script>
+    <script type="text/javascript" src="js/bootstrap-toggle.js"></script>
     <script type="text/javascript" src="js/format.js"></script>
     <script type="text/javascript" src="js/type.js"></script>
     <script type="text/javascript" src="js/app_types.js"></script>
