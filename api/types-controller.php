@@ -37,7 +37,7 @@ Class TypesController extends Controller
 
         $data = $this->readInput();
         if (isset($data->id) && $data->id == $id) {
-            $result = $this->types->update($data);
+            $result = $this->types->update($id, $data);
         } else {
             $result = $this->error(400);
         }

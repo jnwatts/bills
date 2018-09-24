@@ -113,8 +113,10 @@ Class TypesModel extends Model
                     throw new Exception($conn->error);
                 } else {
                     $items = $this->get($id);
-                    if (count($items) > 0) {
+                    if (is_array($items) && count($items) > 0) {
                         $result = $items[0];
+                    } else {
+                        $result = $items;
                     }
                 }
             }
