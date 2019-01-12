@@ -117,11 +117,6 @@ require("config.php");
     navigationDate = new Date(m[1], m[2] - 1, 1);
   }
   app.data = {
-    repeat_types: [
-      {id: 0, short_name: ' ', name: "None"},
-      {id: 1, short_name: 'M', name: "Monthly"},
-      {id: 2, short_name: 'W', name: "Weekly"}
-    ],
     types: [],
     items: [],
     year: navigationDate.getFullYear(),
@@ -154,7 +149,7 @@ require("config.php");
 (function() {
   'use strict';
   
-  app.repeat_types.reset(app.data.repeat_types);
+  app.repeat_types.reset(Type.repeat_types);
   app.types.fetch();
   app.viewmodel = {
     repeat_types: kb.collectionObservable(app.repeat_types),

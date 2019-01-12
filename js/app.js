@@ -140,7 +140,7 @@ var app = window.app = window.app || {};
             return new_item;
           };
 
-          if (item.attributes.repeat_type == 1) {
+          if (item.attributes.repeat_type == Type.REPEAT_MONTHLY) {
             /* Monthly */
             new_item = duplicate(item);
             date = moment(new_item.get('due_date'));
@@ -148,7 +148,7 @@ var app = window.app = window.app || {};
             date.year(current_date.year());
             new_item.set('due_date', date.toDate());
             new_items.push(new_item);
-          } else if (item.attributes.repeat_type == 2) {
+          } else if (item.attributes.repeat_type == Type.REPEAT_WEEKLY) {
             /* Weekly */
             if (weekly_types_seen.indexOf(item.attributes.type_id) < 0) {
               weekly_types_seen.push(item.attributes.type_id);

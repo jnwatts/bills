@@ -58,11 +58,6 @@
 
   var app = window.app = window.app || {};
   app.data = {
-    repeat_types: [
-      {id: 0, short_name: ' ', name: "None"},
-      {id: 1, short_name: 'M', name: "Monthly"},
-      {id: 2, short_name: 'W', name: "Weekly"}
-    ],
     types: [],
   };
 
@@ -85,7 +80,7 @@
 (function() {
   'use strict';
 
-  app.repeat_types.reset(app.data.repeat_types);
+  app.repeat_types.reset(Type.repeat_types);
   app.viewmodel = {};
   app.viewmodel.repeat_types = kb.collectionObservable(app.repeat_types);
   app.viewmodel.types = kb.collectionObservable(app.types);

@@ -32,6 +32,17 @@
     },
   });
 
+  window.Type.REPEAT_NONE = 0;
+  window.Type.REPEAT_MONTHLY = 1;
+  window.Type.REPEAT_WEEKLY = 2;
+  window.Type.repeat_types = [
+    {id: Type.REPEAT_NONE, short_name: ' ', name: "None"},
+    {id: Type.REPEAT_MONTHLY, short_name: 'M', name: "Monthly"},
+    {id: Type.REPEAT_WEEKLY, short_name: 'W', name: "Weekly"},
+  ];
+
+
+
   window.TypeList = Backbone.Collection.extend({
     url: function() {
       var url = app.base + 'api/v1/type';
