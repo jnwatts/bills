@@ -163,6 +163,21 @@ var app = window.app = window.app || {};
                 date.add(7, 'days');
               }
             }
+          } else if (item.attributes.repeat_type == Type.REPEAT_BIWEEKLY) {
+            /* Bi-weekly */
+            if (weekly_types_seen.indexOf(item.attributes.type_id) < 0) {
+              weekly_types_seen.push(item.attributes.type_id);
+              date = moment(item.get('due_date'));
+              while (date.month() != current_date.month()) {
+                date.add(14, 'days');
+              }
+              while (date.month() == current_date.month()) {
+                new_item = duplicate(item);
+                new_item.set('due_date', date.toDate());
+                new_items.push(new_item);
+                date.add(14, 'days');
+              }
+            }
           }
         });
 
