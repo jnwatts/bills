@@ -5,6 +5,9 @@ require("config.php");
 <html lang="en" ng-app="StarterApp">
   <head>
     <title>Bills</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/lib/bootstrap-toggle.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle-fixup.css">
@@ -13,6 +16,16 @@ require("config.php");
   </head>
   <body>
     <div id="busy"></div>
+    <div>
+      <h2>TODO:</h2>
+      <ol>
+        <li>Mark min acceptable level</li>
+        <li>Implement arbitrary day-of-month adjustment</li>
+        <li>Setting an item paid too far in to next month results in red color??</li>
+        <li>Update chart/pie after major changes (use settimeout and dirty flag to prevent multiple refreshes)</li>
+        <li>Knockback is working well, but if not, maybe <a href="https://facebook.github.io/react/docs/tutorial.html">React?</a></li>
+      </ol>
+    </div>
 
     <div id="toolbar">
       <h1>
@@ -48,12 +61,8 @@ require("config.php");
       <button data-bind="click: editTypes">Edit types</button>
     </div>
 
-    <table id="charts">
-    <tr>
-    <td><div id="chart" style="display: none">&nbsp;</div></td>
-    <td><div id="pie" style="display: none">&nbsp;</div></td>
-    </tr>
-    </table><!-- charts -->
+    <div id="chart" style="display: none">&nbsp;</div>
+    <div id="pie" style="display: none">&nbsp;</div>
 
     <datalist id="types" data-bind="foreach: types">
         <option data-bind="value: id, text: name"></option>
@@ -188,13 +197,6 @@ require("config.php");
     </script>
 
 
-    <div>
-      <h2>TODO:</h2>
-      <ol>
-        <li>Update chart/pie after major changes (use settimeout and dirty flag to prevent multiple refreshes)</li>
-        <li>Knockback is working well, but if not, maybe <a href="https://facebook.github.io/react/docs/tutorial.html">React?</a></li>
-      </ol>
-    </div>
 
   </body>
 </html>

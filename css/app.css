@@ -1,9 +1,6 @@
-table#charts, table#charts th, table#charts td {
-  border: none;
+#chart, #pie {
   height: 400px;
-  border: 0px;
-  border-collapse: collapse;
-  padding: 0px;
+  width: 800px;
 }
 table, th , td {
   border: 1px solid grey;
@@ -13,7 +10,8 @@ table, th , td {
 }
 
 table#items {
-    width: 100%;
+    /*width: 100%;*/
+	min-width: 800px;
 }
 
 tr.unpaid:not(.zero), tr.unpaid:not(.zero) input {
@@ -57,6 +55,7 @@ td.name, td.due_date, td.paid_date {
 }
 td.notes {
     width: 100%;
+    /*white-space: nowrap;*/
 }
 td.notes div {
     display: flex;

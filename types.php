@@ -24,12 +24,12 @@
     <script type="text/html" id="edit-type-template">
       <tr class="edit">
         <td class="operations"><input type="checkbox" data-bind="checked: selected"></td>
-        <td class="name"><input type="text" data-bind="value: name"></td></td>
+        <td class="name"><input type="text" data-bind="value: name"></td>
         <td class="default_value"><input type="text" class="currency" data-bind="value: default_value"></td>
         <td class="repeat"><select data-bind="options: $root.repeat_types, optionsValue: 'id', optionsText: 'name', value: repeat_type"></select></td>
-        <td class="description"><input type="text" data-bind="value: description"></td></td>
-        <td class="notes"><input type="text" data-bind="value: notes"></td></td>
-        <td class="url"><input type="text" data-bind="value: url"></td></td>
+        <td class="description"><input type="text" data-bind="value: description"></td>
+        <td class="notes"><input type="text" data-bind="value: notes"></td>
+        <td class="url"><input type="text" data-bind="value: url"></td>
       </tr>
     </script>
 
