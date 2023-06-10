@@ -7,6 +7,7 @@
       due_date: new Date(),
       type_id: 0,
       amount: "0.00",
+      balance: "0.00",
       paid_date: null,
       notes: null,
     },
@@ -15,6 +16,7 @@
       var i = _.clone(this.attributes);
       i.automatic = (i.automatic ? 1 : 0).toString();
       i.amount = window.formatCurrency(i.amount);
+      i.balance = window.formatCurrency(i.balance);
       i.due_date = formatDate(i.due_date);
       i.paid_date = formatDate(i.paid_date);
       return i;
@@ -24,6 +26,7 @@
       var i = response;
       i.automatic = (i.automatic != '0');
       i.amount = window.formatCurrency(i.amount);
+      delete i.balance;
       i.due_date = parseDate(i.due_date);
       i.paid_date = i.paid_date ? parseDate(i.paid_date) : undefined;
       return i;
