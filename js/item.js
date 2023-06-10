@@ -124,6 +124,9 @@
       });
 
       self.sortDate = ko.computed(function() {
+        if (self.paid_date()) {
+          return self.paid_date();
+        }
         return self.due_date();
       });
 
