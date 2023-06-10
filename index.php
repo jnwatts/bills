@@ -73,6 +73,7 @@ require("config.php");
         <td cass="operations"><div class="placeholder"></div></td>
         <td class="name" data-bind="text: name()"></td>
         <td class="amount" data-bind="css: {negative: amount() < 0, positive: amount() > 0, fuzzed: $root.fuzzMode()}, text: formatCurrency(amount())"></td>
+        <td class="balance" data-bind="text: formatCurrency($root.balance($index()))"></td>
         <td class="due_date" data-bind="text: formatDate(due_date())"></td>
         <td class="repeat" data-bind="text: repeat_type().short_name"></td>
         <td class="automatic" data-bind="text: automatic() ? 'X' : ''"></td>
@@ -88,6 +89,7 @@ require("config.php");
         <select data-bind="options: $root.types, optionsValue: 'id', optionsText: 'name', value: type_id"></select>
         </td>
         <td class="amount"><input type="text" class="currency" data-bind="css: {negative: amount() < 0, positive: amount() > 0, fuzzed: $root.fuzzMode()}, value: amount"></td>
+        <td class="balance"></td>
         <td class="due_date"><input type="date" data-bind="datePicker: due_date"></td>
         <td class="repeat" data-bind="text: repeat_type().short_name()"></td>
         <td class="automatic"><input type="checkbox" data-bind="checked: automatic"></td>
@@ -103,6 +105,7 @@ require("config.php");
             <th><input type="checkbox" data-bind="visible: editMode, triState: allOrNoneItems"></th>
             <th>Name</th>
             <th>Amount</th>
+            <th>Balance</th>
             <th>Due</th>
             <th>Repeat</th>
             <th>Auto</th>

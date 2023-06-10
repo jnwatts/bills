@@ -66,6 +66,18 @@ var app = window.app = window.app || {};
         return self.editMode() ? 'edit-item-template' : 'view-item-template';
       };
 
+      self.balance = function(i) {
+        var item = self.items()[i];
+        var balance_prev = "0.00";
+        if (i > 0) {
+          var item_prev = self.items()[i-1];
+          balance_prev = item_prev.balance();
+        }
+        var balance = parseFloat(balance_prev) + parseFloat(item.amount());
+        item.balance(balance.toFixed(2));
+        return item.balance();
+      };
+
       self.monthNext = function() {
         var m = moment(self.date());
         m.add(1, 'M');
