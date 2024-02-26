@@ -55,6 +55,9 @@
         var result = ko.utils.arrayFirst(app.viewmodel.types(), function (type) {
           return type.id() == id;
         });
+	if (result == null) {
+		result = app.viewmodel.types()[0];
+	}
         return result;
       });
 
