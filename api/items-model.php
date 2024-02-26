@@ -17,7 +17,7 @@ class ItemsModel extends Model
         if (strlen($where) > 0)
             $where = 'AND ' . $where;
 
-        $sql_result = $conn->query("SELECT I.`id`, `automatic`, DATE_FORMAT(`due_date`, '%Y-%m-%d') AS due_date, `repeat_type`, `type_id`, `amount`, DATE_FORMAT(`paid_date`, '%Y-%m-%d') AS paid_date, I.`notes` FROM `items` AS I, `types` AS T WHERE I.`type_id` = T.`id` ".$where. " ORDER BY `due_date` ASC, T.`name` ASC");
+        $sql_result = $conn->query("SELECT I.`id`, `automatic`, DATE_FORMAT(`due_date`, '%Y-%m-%d') AS due_date, `repeat_type`, `type_id`, `amount`, DATE_FORMAT(`paid_date`, '%Y-%m-%d') AS paid_date, I.`notes` FROM `items` AS I, `types` AS T WHERE I.`deleted` IS NULL AND I.`type_id` = T.`id` ".$where. " ORDER BY `due_date` ASC, T.`name` ASC");
 
         $result = array();
         if ($sql_result) {
@@ -138,7 +138,7 @@ class ItemsModel extends Model
         $result = array("result" => false);
         $conn = &$this->conn;
         $id = intval($id);
-        $sql = $conn->prepare("DELETE FROM `items` WHERE `id` = ?");
+        $sql = $conn->prepare("UPDATE `items` SET deleted=current_timestamp() WHERE `id` = ?");
         if ($sql === FALSE) {
             $this->error("Failed to compile update: ".$conn->error, 500);
         } else {
