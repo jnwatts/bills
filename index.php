@@ -195,7 +195,6 @@ require("config.php");
 
   app.viewmodel.app.start();
 
-  setTimeout(function() { app.updateChart(); app.updatePie(); }, 750);
 })();
     </script>
 
