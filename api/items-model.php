@@ -34,10 +34,10 @@ class ItemsModel extends Model
 
     function find($params = [])
     {
-        $year = $params['year'];
-        $month = $params['month'];
+        $from = $params['from'];
+        $to = $params['to'];
 
-        return $this->select("YEAR(`due_date`) = ".(int)$year." AND MONTH(`due_date`) = ".(int)$month);
+        return $this->select("`due_date` BETWEEN '".$from."' AND '".$to."'");
     }
 
     function get($id)
