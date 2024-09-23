@@ -73,7 +73,7 @@ require("config.php");
         <td cass="operations"><div class="placeholder"></div></td>
         <td class="name" data-bind="text: name()"></td>
         <td class="amount" data-bind="css: {negative: amount() < 0, positive: amount() > 0, fuzzed: $root.fuzzMode()}, text: formatCurrency(amount())"></td>
-        <td class="balance" data-bind="text: formatCurrency($root.balance($index()))"></td>
+        <td class="balance" data-bind="css: {fuzzed: $root.fuzzMode()}, text: formatCurrency($root.balance($index()))"></td>
         <td class="due_date" data-bind="text: formatDate(due_date())"></td>
         <td class="repeat" data-bind="text: repeat_type().short_name"></td>
         <td class="automatic" data-bind="text: automatic() ? 'X' : ''"></td>
