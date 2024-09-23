@@ -13,13 +13,27 @@ Class ItemsController extends Controller
 
     function find()
     {
+        $date_regex = '#([0-9]{4}-[0-9]{1,2})#';
         $params = $this->params();
-        $date = isset($params['date']) ? $params['date'] : date('Y').'-'.date('m');
 
-        if (preg_match('#([0-9]{4})-([0-9]{1,2})#', $date, $m))
-            $result = $this->items->find(['year' => $m[1], 'month' => $m[2]]);
-        else
-            $result = $this->error(400, 'Invalid date range');
+        if (isset($params['date'])) {
+            $from = $params['date'];
+            $to = $params['date'];
+        } else {
+            $from = isset($params['from']) ? $params['from'] : date('Y').'-'.date('m');
+            $to = isset($params['to']) ? $params['to'] : date('Y').'-'.date('m');
+        }
+
+        if (!preg_match($date_regex, $from, $from_m))
+            return $this->error(400, 'Invalid date range');
+
+        if (!preg_match($date_regex, $to, $to_m))
+            return $this->error(400, 'Invalid date range');
+
+        $from = date("Y-m-d", strtotime($from_m[1].'-1'));
+        $to = date("Y-m-t", strtotime($to_m[1].'-1'));
+
+        $result = $this->items->find(['from' => $from, 'to' => $to]);
 
         return $result;
     }
