@@ -71,6 +71,8 @@ class ItemsModel extends Model
             $placeholders[] = "?";
             $values[] = $value;
         }
+        $columns[] = "created";
+        $placeholders[] = "current_timestamp()";
         $sql_result = false;
         $sql = $conn->prepare("INSERT INTO `items` (" . implode(",", $columns) . ") VALUES (" . implode(",", $placeholders) . ")");
         if ($sql) {
