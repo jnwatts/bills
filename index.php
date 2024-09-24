@@ -35,7 +35,8 @@ require("config.php");
         <img src="img/ic_navigate_before_black_24px.svg">
       </button>
       <!-- <span data-bind="datePicker: date"></span> -->
-      <input type="month" data-bind="monthPicker: date">
+      <input type="month" data-bind="monthPicker: from">
+      <input type="month" data-bind="monthPicker: to">
       <button data-bind="click: monthNext">
         <img src="img/ic_navigate_next_black_24px.svg">
       </button>
@@ -118,27 +119,6 @@ require("config.php");
       </table>
     </div><!-- content -->
 
-    <script type="text/javascript">
-(function() {
-  'use strict';
-  var app = window.app = window.app || {};
-  var defaultDate = new Date();
-  var navigationDate = defaultDate;
-  var m;
-  if (m = window.location.search.match(/\?([0-9]{4})\/([0-9]{1,2})/)) {
-    navigationDate = new Date(m[1], m[2] - 1, 1);
-  }
-  app.data = {
-    types: [],
-    items: [],
-    year: navigationDate.getFullYear(),
-    month: navigationDate.getMonth() + 1,
-    defaultYear: defaultDate.getFullYear(),
-    defaultMonth: defaultDate.getMonth() + 1,
-  };
-})();
-    </script>
-
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.maskMoney.js"></script>
     <script type="text/javascript" src="js/lib/knockback-full-stack.js"></script>
@@ -156,6 +136,38 @@ require("config.php");
     <script type="text/javascript" src="js/month-date-picker.js"></script>
     <script type="text/javascript" src="js/type.js"></script>
     <script type="text/javascript" src="js/item.js"></script>
+
+        <script type="text/javascript">
+    (function() {
+      'use strict';
+      var app = window.app = window.app || {};
+      var defaultDate = new Date();
+      var from = defaultDate;
+      var to = defaultDate;
+      var m;
+      if (m = window.location.search.match(/\?([0-9]{4})\/([0-9]{1,2})-([0-9]{4})\/([0-9]{1,2})/)) {
+        from = moment({year: m[1], month: m[2] - 1}).toDate();
+        to = moment({year: m[3], month: m[4] - 1}).toDate();
+        if (to < from) {
+          var from = moment(from).format("YYYY/M");
+          var to = moment(to).format("YYYY/M");
+          window.location.href = <?=$config["base"]?> + '?' + to + '-' + from
+        }
+      } else if (m = window.location.search.match(/\?([0-9]{4})\/([0-9]{1,2})/)) {
+        from = new Date(m[1], m[2] - 1, 1);
+        to = from;
+      }
+      app.data = {
+        types: [],
+        items: [],
+        from: from,
+        to: to,
+        defaultYear: defaultDate.getFullYear(),
+        defaultMonth: defaultDate.getMonth() + 1,
+      };
+    })();
+        </script>
+
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
 (function() {

@@ -32,24 +32,43 @@ var app = window.app = window.app || {};
       self.months = kb.collectionObservable(app.months);
 
       self.date = ko.observable(moment({year: app.data.year, month: app.data.month - 1}).toDate());
+      self.from = ko.observable(app.data.from);
+      self.to = ko.observable(app.data.to);
 
-      self.date.subscribe(function(v) {
-        var m = moment(v);
-        var new_search = '?' + m.format("YYYY/M");
-        if (new_search != window.location.search) {
+      var _location = function(from, to) {
+        var from = moment(from).format("YYYY/M");
+        var to = moment(to).format("YYYY/M");
+        if (from == to) {
+          return '?' + from;
+        } else {
+          return '?' + from + '-' + to;
+        }
+      }
+
+      self.location = ko.computed(function() {
+        return _location(self.from(), self.to());
+      });
+
+      self.location.subscribe(function(v) {
+        if (v != window.location.search) {
           self.fetch();
-          app.router.navigate('/' + new_search);
+          app.router.navigate('/' + v);
         }
       });
 
       self.start = function() {
-        app.router.navigate('?' + moment(app.viewmodel.app.date()).format("YYYY/M"), {trigger: false, replace: true});
+        app.router.navigate(self.location());
         self.fetch();
       };
 
       self.updateTitle = function() {
-        var m = moment(self.date());
-        document.title = "Bills - " + m.format("MMM YYYY");
+        var from = moment(self.from()).format("YYYY/M");
+        var to = moment(self.to()).format("YYYY/M");
+        if (from == to) {
+          document.title = "Bills - " + from;
+        } else {
+          document.title = "Bills - " + from + " - " + to;
+        }
       };
 
       self.month = ko.computed(function() {
@@ -81,26 +100,33 @@ var app = window.app = window.app || {};
       };
 
       self.monthNext = function() {
-        var m = moment(self.date());
-        m.add(1, 'M');
-        self.date(m.toDate());
+        var to = moment(self.to());
+        to.add(1, 'M');
+        self.to(to.toDate());
+        var from = moment(self.from());
+        from.add(1, 'M');
+        self.from(from.toDate());
       };
 
       self.monthPrev = function() {
-        var m = moment(self.date());
-        m.subtract(1, 'M');
-        self.date(m.toDate());
+        var from = moment(self.from());
+        from.subtract(1, 'M');
+        self.from(from.toDate());
+        var to = moment(self.to());
+        to.subtract(1, 'M');
+        self.to(to.toDate());
       };
 
-      self.fetch = function(year, month) {
+      self.fetch = function() {
         if (self.editMode()) {
           app.items.saveAll();
         }
-        if (year && month) {
-          self.date(new Date(year, month - 1, 1));
-        }
-        var m = moment(self.date());
-        var d = {'date': m.year().toString() + '-'  + (m.month() + 1).toString()};
+        var from = moment(self.from());
+        var to = moment(self.to());
+        var d = {
+          'from': from.year().toString() + '-'  + (from.month() + 1).toString(),
+          'to': to.year().toString() + '-'  + (to.month() + 1).toString(),
+        };
         app.items.fetch({data: d});
         self.updateTitle();
       };
@@ -263,17 +289,25 @@ var app = window.app = window.app || {};
     }));
   };
 
+  //TODO: This doesn't seem to be called from anywhere anymore? Should bisect and figure out where... possibly from long before the date->from/to migration?
   var Router = Backbone.Router.extend({
     routes: {
-      "(?)(:year)(/:month)": "items",
+      "(?)(:from)-(:to)": "items_range",
+      "(?)(:date)": "items",
     },
 
-    items: function(year, month) {
-      if (!(year && month)) {
-        year = app.data.defaultYear;
-        month = app.data.defaultMonth;
-      }
-      app.viewmodel.app.fetch(year, month);
+    items: function(date) {
+      console.log("ROUTER:ITEMS", date);
+      // if (!(year && month)) {
+      //   year = app.data.defaultYear;
+      //   month = app.data.defaultMonth;
+      // }
+      // app.viewmodel.app.fetch(date, date);
+    },
+
+    items_range: function(from, to) {
+      console.log("ROUTER:ITEMS_RANGE", from, to);
+      // app.viewmodel.app.fetch(from, to);
     },
   });
 
