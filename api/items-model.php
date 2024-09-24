@@ -37,7 +37,7 @@ class ItemsModel extends Model
         $from = $params['from'];
         $to = $params['to'];
 
-        return $this->select("`due_date` BETWEEN '".$from."' AND '".$to."'");
+        return $this->select("`due_date` BETWEEN '".$from."' AND '".$to."' OR `paid_date` BETWEEN '".$from."' AND '".$to."'");
     }
 
     function get($id)
