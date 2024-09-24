@@ -50,6 +50,8 @@ var app = window.app = window.app || {};
   };
 
   window.formatCurrency = function(value) {
+    if (!value)
+      return undefined;
     return parseFloat(value.replace(',', '')).toFixed(2);
   };
 })();

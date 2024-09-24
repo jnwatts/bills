@@ -68,6 +68,8 @@ var app = window.app = window.app || {};
 
       self.balance = function(i) {
         var item = self.items()[i];
+        if (!item)
+          return undefined;
         var balance_prev = parseFloat("0.00");
         if (i > 0) {
           var item_prev = self.items()[i-1];
