@@ -160,8 +160,9 @@ var app = window.app = window.app || {};
         var selected_items = self.selectedItems();
         var weekly_types_seen = [];
         var new_items = new ItemList();
-        var current_date = moment(self.date());
-        current_date.add(1, 'months');
+        var next_month = moment(selected_items[0].due_date());
+        console.log("next_month", next_month);
+        next_month.add(1, 'months');
 
         ko.utils.arrayForEach(selected_items, function(old_item) {
           var item = old_item.model();
@@ -184,8 +185,8 @@ var app = window.app = window.app || {};
             /* Monthly */
             new_item = duplicate(item);
             date = moment(new_item.get('due_date'));
-            date.month(current_date.month());
-            date.year(current_date.year());
+            date.month(next_month.month());
+            date.year(next_month.year());
             new_item.set('due_date', date.toDate());
             new_items.push(new_item);
           } else if (item.attributes.repeat_type == Type.REPEAT_WEEKLY) {
@@ -193,10 +194,10 @@ var app = window.app = window.app || {};
             if (weekly_types_seen.indexOf(item.attributes.type_id) < 0) {
               weekly_types_seen.push(item.attributes.type_id);
               date = moment(item.get('due_date'));
-              while (date.month() != current_date.month()) {
+              while (date.month() != next_month.month()) {
                 date.add(7, 'days');
               }
-              while (date.month() == current_date.month()) {
+              while (date.month() == next_month.month()) {
                 new_item = duplicate(item);
                 new_item.set('due_date', date.toDate());
                 new_items.push(new_item);
@@ -208,10 +209,10 @@ var app = window.app = window.app || {};
             if (weekly_types_seen.indexOf(item.attributes.type_id) < 0) {
               weekly_types_seen.push(item.attributes.type_id);
               date = moment(item.get('due_date'));
-              while (date.month() != current_date.month()) {
+              while (date.month() != next_month.month()) {
                 date.add(14, 'days');
               }
-              while (date.month() == current_date.month()) {
+              while (date.month() == next_month.month()) {
                 new_item = duplicate(item);
                 new_item.set('due_date', date.toDate());
                 new_items.push(new_item);
