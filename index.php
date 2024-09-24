@@ -185,7 +185,7 @@ require("config.php");
 
   $('body').on('keyup', function(e) {
     if (e.keyCode == 27) {
-      app.viewmodel.editMode(false);
+      app.viewmodel.app.editMode(false);
     }
   });
 
