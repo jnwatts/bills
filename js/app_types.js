@@ -85,8 +85,8 @@ var app = window.app = window.app || {};
   Backbone.Collection.prototype.saveAll = function(options) {
     // return Backbone.sync('update', this, options);
     return $.when.apply($, _.map(this.models, function(m) {
-      // Type ID 1 is read-only (built-in "MISC" type)
-      return (m.id != 1 && m.hasChanged()) ? m.save(null, options).then(_.identity) : m;
+      // Type ID 1 & 2 are read-only (built-in "MISC" & "BALANCE")
+      return ((m.id === undefined || m.id > 2) && m.hasChanged()) ? m.save(null, options).then(_.identity) : m;
     }));
   };
 
