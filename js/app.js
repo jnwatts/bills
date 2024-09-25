@@ -81,6 +81,10 @@ var app = window.app = window.app || {};
         var item = self.items()[i];
         if (!item)
           return undefined;
+        if (item.type_id() == 2) {// BALANCE
+          item.balance(parseFloat(item.amount()).toFixed(2));
+          return item.balance();
+        }
         var balance_prev = parseFloat("0.00");
         if (i > 0) {
           var item_prev = self.items()[i-1];
