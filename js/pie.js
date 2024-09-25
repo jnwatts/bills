@@ -9,13 +9,22 @@ var app = window.app = window.app || {};
     var remaining;
 
     app.items.each(function(item) {
-      var d = {y: parseFloat(item.get('amount')), name: app.types.get(item.get('type_id')).get('name')};
+      var type_id = item.get('type_id');
+      var type = app.types.get(type_id);
+      var type_name = type.get('name');
+      var amount = item.get('amount');
 
-      if (d.y < 0) {
+
+      var d = {y: parseFloat(amount), name: type_name};
+
+      if (type_id == 2) {
+        // BALANCE
+      } else if (d.y < 0) {
         data.push(d);
       } else {
         total += d.y;
       }
+      console.log(item.get('id'), type_id, type_name, amount, total);
     });
 
     remaining = total;
