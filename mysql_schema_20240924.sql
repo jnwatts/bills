@@ -1,0 +1,1 @@
+REPLACE INTO `types` (`id`, `name`) VALUES (1, 'MISC'), (2, 'BALANCE');
