@@ -31,7 +31,6 @@ var app = window.app = window.app || {};
       });
       self.months = kb.collectionObservable(app.months);
 
-      self.date = ko.observable(moment({year: app.data.year, month: app.data.month - 1}).toDate());
       self.from = ko.observable(app.data.from);
       self.to = ko.observable(app.data.to);
 
@@ -70,13 +69,6 @@ var app = window.app = window.app || {};
           document.title = "Bills - " + from + " - " + to;
         }
       };
-
-      self.month = ko.computed(function() {
-        return moment(self.date()).month();
-      });
-      self.year = ko.computed(function() {
-        return moment(self.date()).year();
-      });
 
       self.editMode = ko.observable(false);
       self.fuzzMode = ko.observable(false);
