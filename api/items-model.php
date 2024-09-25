@@ -8,6 +8,7 @@ require_once(__DIR__ . '/model.php');
 
 class ItemsModel extends Model
 {
+    // These columns are read/write in create or update
     protected $columns = ["due_date", "automatic", "amount", "paid_date", "notes", "type_id"];
 
     private function select($where = "")

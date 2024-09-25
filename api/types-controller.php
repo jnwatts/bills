@@ -16,6 +16,11 @@ Class TypesController extends Controller
         return $this->types->find();
     }
 
+    function is_read_only($id)
+    {
+        return ($id >= 1 && $id <= 2);
+    }
+
     function create()
     {
         $data = $this->readInput();
@@ -32,7 +37,7 @@ Class TypesController extends Controller
 
     function update($id)
     {
-        if ($id == 1)
+        if ($this->is_read_only($id))
             return $this->error(403);
 
         $data = $this->readInput();
@@ -46,7 +51,7 @@ Class TypesController extends Controller
 
     function delete($id)
     {
-        if ($id == 1)
+        if ($this->is_read_only($id))
             return $this->error(403);
 
         return $this->types->delete($id);
