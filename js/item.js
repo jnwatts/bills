@@ -3,9 +3,10 @@
 
   window.Item = Backbone.Model.extend({
     defaults: {
+      id: null,
       automatic: false,
       due_date: new Date(),
-      type_id: 0,
+      type_id: 1,
       amount: "0.00",
       balance: "0.00",
       paid_date: null,
@@ -52,13 +53,16 @@
 
       self.type = ko.computed(function() {
         var id = self.type_id();
+
         var result = ko.utils.arrayFirst(app.viewmodel.types(), function (type) {
           return type.id() == id;
         });
-	if (result == null) {
-		result = app.viewmodel.types()[0];
-	}
-        return result;
+        if (result !== null) {
+          return result;
+        }
+        return ko.utils.arrayFirst(app.viewmodel.types(), function (type) {
+          return type.id() == 1; // MISC
+        });
       });
 
       self.repeat_type = ko.computed(function() {
